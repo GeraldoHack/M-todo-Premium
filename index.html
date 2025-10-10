@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermenegildo Coach - Transformação em 4 Dias</title>
+    <title>Método Premium - Emagrecimento Definitivo em 4 Semanas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -22,30 +22,34 @@
             --dark: #2c3e50;
             --success: #27ae60;
             --gold: #D4AF37;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4A6 100%);
         }
 
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--light);
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
-            max-width: 1200px;
+            width: 95%;
+            max-width: 400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
 
-        /* Header */
+        /* Header Mobile */
         header {
             background: var(--primary);
             color: white;
-            padding: 1rem 0;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
         }
 
         .header-content {
@@ -55,8 +59,8 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
+            font-size: 1.4rem;
+            font-weight: 800;
             color: white;
         }
 
@@ -67,379 +71,480 @@
         .header-badge {
             background: var(--gold);
             color: var(--primary);
-            padding: 8px 15px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        /* Hero Section Mobile */
+        .hero {
+            padding: 140px 0 50px;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+        }
+
+        .hero-content {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            background: var(--gold);
+            color: var(--primary);
+            padding: 8px 20px;
             border-radius: 25px;
             font-weight: 700;
             font-size: 0.9rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 160px 0 80px;
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.3;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
         }
 
         .hero-stats {
             display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin: 3rem 0;
+            justify-content: space-around;
+            margin: 30px 0;
+            gap: 10px;
         }
 
         .stat {
             text-align: center;
+            flex: 1;
         }
 
         .stat-number {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 800;
             color: var(--gold);
             display: block;
         }
 
         .stat-text {
-            font-size: 1rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
         }
 
         .cta-button {
-            display: inline-block;
+            display: block;
             background: var(--secondary);
             color: white;
-            padding: 15px 40px;
-            font-size: 1.2rem;
+            padding: 18px 30px;
+            font-size: 1.1rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
         }
 
         .cta-button:hover {
             background: #c0392b;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
         /* Mentor Section */
         .mentor {
-            padding: 80px 0;
+            padding: 60px 0;
             background: white;
-        }
-
-        .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--primary);
         }
 
-        .mentor-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
+        .mentor-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 30px;
         }
 
         .mentor-image {
-            flex: 1;
-            border-radius: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 auto 20px;
+            border: 5px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
 
         .mentor-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .mentor-info {
-            flex: 1;
-        }
-
-        .mentor-name {
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .mentor-title {
-            font-size: 1.2rem;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-        }
-
-        .mentor-description {
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .mentor-highlights {
-            list-style: none;
-        }
-
-        .mentor-highlights li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-            position: relative;
-            padding-left: 30px;
-        }
-
-        .mentor-highlights li:before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* Program Section */
-        .program {
-            padding: 80px 0;
-            background: var(--light);
-        }
-
-        .program-highlight {
-            text-align: center;
-            background: var(--primary);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 3rem;
-            border-left: 5px solid var(--gold);
-        }
-
-        .program-highlight h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .days-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .day-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            border-top: 5px solid var(--accent);
-        }
-
-        .day-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .day-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .day-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .author-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .author-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .author-info h4 {
+        .mentor-name {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 10px;
             font-weight: 700;
-            margin-bottom: 5px;
         }
 
-        .author-info p {
-            font-size: 0.9rem;
-            opacity: 0.8;
+        .mentor-title {
+            font-size: 1rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
-        /* Scientific Base */
-        .scientific {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .scientific-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .scientific-text {
-            flex: 1;
-        }
-
-        .scientific-visual {
-            flex: 1;
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
+        .mentor-description {
+            margin-bottom: 20px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
-        .scientific-stats {
+        .mentor-stats {
             display: flex;
             justify-content: space-around;
-            margin-top: 30px;
+            margin: 20px 0;
         }
 
-        .scientific-stat {
+        .mentor-stat {
             text-align: center;
         }
 
-        .scientific-number {
-            font-size: 2.5rem;
+        .mentor-stat-number {
+            font-size: 1.8rem;
             font-weight: 800;
-            color: var(--gold);
+            color: var(--accent);
             display: block;
         }
 
-        /* Pricing */
-        .pricing {
-            padding: 80px 0;
+        .mentor-stat-text {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 0;
             background: var(--light);
         }
 
-        .pricing-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--accent);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* Transformation Section */
+        .transformation {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .transformation-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .transformation-card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .transformation-images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .transformation-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+        }
+
+        .transformation-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .transformation-arrow {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: var(--success);
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 60px 0;
+            background: var(--gradient);
+            color: white;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .results-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .result-card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .result-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            border: 3px solid var(--gold);
+        }
+
+        .result-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .result-text {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .result-author {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .result-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .result-stat {
+            text-align: center;
+        }
+
+        .result-stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            display: block;
+        }
+
+        .result-stat-text {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Scientific Proof */
+        .scientific {
+            padding: 60px 0;
+            background: var(--light);
+        }
+
+        .proof-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .proof-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .proof-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 60px 0;
+            background: white;
         }
 
         .pricing-card {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
             position: relative;
+            margin-bottom: 30px;
+            border: 3px solid var(--accent);
         }
 
-        .pricing-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .pricing-card.popular {
-            border: 3px solid var(--gold);
-            transform: scale(1.05);
-        }
-
-        .pricing-card.popular:hover {
-            transform: scale(1.05) translateY(-10px);
-        }
-
-        .popular-badge {
+        .pricing-badge {
             position: absolute;
-            top: 20px;
-            right: -30px;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
             background: var(--gold);
             color: var(--primary);
-            padding: 8px 40px;
+            padding: 8px 20px;
+            border-radius: 20px;
             font-weight: 700;
-            transform: rotate(45deg);
             font-size: 0.9rem;
         }
 
         .pricing-name {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
 
         .price {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: var(--secondary);
-            margin: 1rem 0;
+            margin: 15px 0;
         }
 
         .price-currency {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             vertical-align: super;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
 
         .features-list {
             list-style: none;
             text-align: left;
-            margin: 2rem 0;
+            margin: 20px 0;
         }
 
         .features-list li {
             padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #eee;
             position: relative;
             padding-left: 30px;
         }
@@ -450,60 +555,38 @@
             font-weight: bold;
             position: absolute;
             left: 0;
+            font-size: 1.1rem;
         }
 
         /* Guarantee */
         .guarantee {
             background: var(--success);
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
-            margin: 2rem 0;
-            border-radius: 10px;
+            margin: 25px 0;
+            border-radius: 15px;
+            font-size: 1.1rem;
         }
 
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 1rem;
-        }
-
-        .footer-logo span {
-            color: var(--gold);
-        }
-
-        .contact-info {
-            margin: 2rem 0;
-        }
-
+        /* WhatsApp Button */
         .whatsapp-button {
-            display: inline-flex;
+            display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             background: #25D366;
             color: white;
-            padding: 15px 30px;
+            padding: 16px 25px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            margin: 1rem 0;
+            margin: 15px auto;
             transition: all 0.3s ease;
+            width: 90%;
+            max-width: 280px;
+            font-size: 1rem;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
         }
 
         .whatsapp-button:hover {
@@ -511,39 +594,115 @@
             transform: scale(1.05);
         }
 
+        /* FAQ Section */
+        .faq {
+            padding: 60px 0;
+            background: var(--light);
+        }
+
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .footer-logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .contact-info {
+            margin: 15px 0;
+        }
+
         .footer-bottom {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.8;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
+        /* Mobile Optimizations */
+        @media (max-width: 480px) {
+            .container {
+                width: 92%;
+                padding: 0 10px;
+            }
+            
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 1.9rem;
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
-            .mentor-content, .scientific-content {
-                flex-direction: column;
+            .stat-number {
+                font-size: 1.8rem;
             }
             
-            .pricing-card.popular {
-                transform: none;
+            .section-title {
+                font-size: 1.6rem;
             }
             
-            .pricing-card.popular:hover {
-                transform: translateY(-10px);
+            .pricing-card {
+                padding: 25px 20px;
+            }
+            
+            .price {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero h1 {
+                font-size: 1.7rem;
             }
             
             .hero-stats {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+            }
+            
+            .stat {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .stat-number {
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -553,8 +712,8 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">Hermenegildo<span>Coach</span></div>
-                <div class="header-badge">Método 100% Presencial</div>
+                <div class="logo">Método<span>Premium</span></div>
+                <div class="header-badge">100% NATURAL</div>
             </div>
         </div>
     </header>
@@ -562,124 +721,194 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Transformação Total em Apenas 4 Dias</h1>
-            <p>Descubra o método exclusivo que já transformou a vida de mais de 3.000 pessoas, incluindo grandes milionários e empresários de sucesso</p>
-            
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">4</span>
-                    <span class="stat-text">Dias Intensivos</span>
+            <div class="hero-content">
+                <div class="hero-badge">MÉTODO COMPROVADO</div>
+                <h1>EMAGREÇA ATÉ 8KG EM 4 SEMANAS</h1>
+                <p>Descubra o método exclusivo que já transformou mais de 5.000 vidas sem dietas malucas ou exercícios exaustivos</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">8KG</span>
+                        <span class="stat-text">Menos Peso</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-text">Semanas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">Natural</span>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-text">Presencial</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">3.000+</span>
-                    <span class="stat-text">Transformações</span>
-                </div>
+                
+                <a href="#pricing" class="cta-button">QUERO EMAGRECER AGORA</a>
             </div>
-            
-            <a href="#pricing" class="cta-button">QUERO MINHA VAGA NO PRÓXIMO GRUPO</a>
         </div>
     </section>
 
     <!-- Mentor Section -->
     <section class="mentor">
         <div class="container">
-            <h2 class="section-title">Seu Mentor Nos Próximos 4 Dias</h2>
-            <div class="mentor-content">
+            <h2 class="section-title">SEU ESPECIALISTA</h2>
+            <div class="mentor-card">
                 <div class="mentor-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hermenegildo Coach">
+                    <img src="https://i.postimg.cc/zfzY4860/IMG-20251009-WA0104.jpg" alt="Hermenegildo Coach">
                 </div>
-                <div class="mentor-info">
-                    <h3 class="mentor-name">Hermenegildo Coach</h3>
-                    <p class="mentor-title">Especialista em Transformação de Alta Performance</p>
-                    <p class="mentor-description">Com mais de 15 anos de experiência em desenvolvimento pessoal e empresarial, Hermenegildo já treinou alguns dos maiores nomes do empresariado nacional. Sua metodologia exclusiva combina neurociência, psicologia comportamental e estratégias comprovadas de alto desempenho.</p>
-                    <ul class="mentor-highlights">
-                        <li>Mais de 3.000 transformações comprovadas</li>
-                        <li>Mentor de grandes milionários e CEOs</li>
-                        <li>Metodologia com base científica validada</li>
-                        <li>Especialista em reprogramação mental</li>
-                    </ul>
+                <h3 class="mentor-name">HERMENEGILDO COACH</h3>
+                <p class="mentor-title">Especialista em Emagrecimento Saudável</p>
+                <p class="mentor-description">Com mais de 12 anos de experiência em transformação corporal, Hermenegildo desenvolveu um método único que combina nutrição inteligente e estratégias comportamentais para resultados duradouros.</p>
+                
+                <div class="mentor-stats">
+                    <div class="mentor-stat">
+                        <span class="mentor-stat-number">5.000+</span>
+                        <span class="mentor-stat-text">Pessoas Transformadas</span>
+                    </div>
+                    <div class="mentor-stat">
+                        <span class="mentor-stat-number">12+</span>
+                        <span class="mentor-stat-text">Anos de Experiência</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Program Section -->
-    <section class="program">
+    <!-- Benefits Section -->
+    <section class="benefits">
         <div class="container">
-            <h2 class="section-title">O Que Acontece Nestes 4 Dias</h2>
-            
-            <div class="program-highlight">
-                <h3>Experiência 100% Presencial - Porque Funciona Melhor</h3>
-                <p>O contato direto, a energia do grupo e a imersão total são elementos cruciais para uma transformação profunda e duradoura.</p>
-            </div>
-            
-            <div class="days-grid">
-                <div class="day-card">
-                    <div class="day-number">01</div>
-                    <h3 class="day-title">Dia da Quebra de Limites</h3>
-                    <p>Identificação e eliminação das crenças limitantes que impedem seu crescimento</p>
+            <h2 class="section-title">BENEFÍCIOS EXCLUSIVOS</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>Perda de Peso Acelerada</h3>
+                    <p>Até 8kg em 4 semanas com método 100% natural</p>
                 </div>
-                <div class="day-card">
-                    <div class="day-number">02</div>
-                    <h3 class="day-title">Dia da Reprogramação Mental</h3>
-                    <p>Instalação de novos padrões mentais para sucesso e abundância</p>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Saúde Renovada</h3>
+                    <p>Melhora completa da saúde e disposição física</p>
                 </div>
-                <div class="day-card">
-                    <div class="day-number">03</div>
-                    <h3 class="day-title">Dia da Estratégia Milionária</h3>
-                    <p>Plano concreto para multiplicar seus resultados financeiros</p>
-                </div>
-                <div class="day-card">
-                    <div class="day-number">04</div>
-                    <h3 class="day-title">Dia da Implementação</h3>
-                    <p>Fechamento com ações práticas para resultados imediatos</p>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Resultado Definitivo</h3>
+                    <p>Método que ensina a manter o peso ideal para sempre</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
+    <!-- Transformation Section -->
+    <section class="transformation">
         <div class="container">
-            <h2 class="section-title">Quem Já Transformou</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Em apenas 4 dias com o Hermenegildo Coach, minha mentalidade mudou completamente. Multipliquei meus resultados por 5 em menos de 3 meses."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Carlos Silva">
+            <h2 class="section-title">TRANSFORMAÇÕES REAIS</h2>
+            <div class="transformation-grid">
+                <div class="transformation-card">
+                    <h3>ANTES E DEPOIS</h3>
+                    <div class="transformation-images">
+                        <div class="transformation-image">
+                            <img src="https://i.postimg.cc/qMGPyg1m/antes-e-depois-1.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Antes">
                         </div>
-                        <div class="author-info">
-                            <h4>Carlos Silva</h4>
-                            <p>Empresário do Ramo Imobiliário</p>
+                        <div class="transformation-arrow">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <div class="transformation-image">
+                            <img src="https://i.postimg.cc/mk7G0wNk/antes-e-depois-2.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Depois">
+                        </div>
+                    </div>
+                    <p><strong>Maria:</strong> Perdeu 9kg em 5 semanas</p>
+                </div>
+                
+                <div class="transformation-card">
+                    <h3>RESULTADO ESPETACULAR</h3>
+                    <div class="transformation-images">
+                        <div class="transformation-image">
+                            <img src="https://i.postimg.cc/nhDLn4Fq/depositphotos-18298939-stock-photo-fat-woman-trying-to-wear.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Antes">
+                        </div>
+                        <div class="transformation-arrow">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <div class="transformation-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Depois">
+                        </div>
+                    </div>
+                    <p><strong>João:</strong> Eliminou 11kg em 6 semanas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">COMO FUNCIONA</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Protocolo Personalizado</h3>
+                        <p>Plano adaptado ao seu metabolismo e objetivos</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Acompanhamento Diário</h3>
+                        <p>Suporte constante para garantir seus resultados</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Resultados em 4 Semanas</h3>
+                        <p>Transformação visível já no primeiro mês</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results">
+        <div class="container">
+            <h2 class="section-title">DEPOIMENTOS REAIS</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ana">
+                    </div>
+                    <p class="result-text">"Finalmente consegui perder os 7kg que me incomodavam há anos! O método é incrível!"</p>
+                    <p class="result-author">- Ana, 32 anos</p>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <span class="result-stat-number">7KG</span>
+                            <span class="result-stat-text">Menos</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-stat-number">5</span>
+                            <span class="result-stat-text">Semanas</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"O método presencial faz toda diferença. A energia do grupo e a mentoria direta do Hermenegildo foram transformadoras para meu negócio."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Ana Rodrigues">
-                        </div>
-                        <div class="author-info">
-                            <h4>Ana Rodrigues</h4>
-                            <p>CEO de Empresa de Tecnologia</p>
-                        </div>
+                
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Carlos">
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Já participei de vários cursos, mas nada se compara à imersão com o Hermenegildo. Resultados que antes pareciam impossíveis se tornaram realidade."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Ricardo Almeida">
+                    <p class="result-text">"Não acreditava que seria possível emagrecer sem passar fome. Método revolucionário!"</p>
+                    <p class="result-author">- Carlos, 45 anos</p>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <span class="result-stat-number">10KG</span>
+                            <span class="result-stat-text">Menos</span>
                         </div>
-                        <div class="author-info">
-                            <h4>Ricardo Almeida</h4>
-                            <p>Investidor e Consultor Financeiro</p>
+                        <div class="result-stat">
+                            <span class="result-stat-number">6</span>
+                            <span class="result-stat-text">Semanas</span>
                         </div>
                     </div>
                 </div>
@@ -687,114 +916,80 @@
         </div>
     </section>
 
-    <!-- Scientific Base -->
+    <!-- Scientific Proof -->
     <section class="scientific">
         <div class="container">
-            <h2 class="section-title">Base Científica Comprovada</h2>
-            <div class="scientific-content">
-                <div class="scientific-text">
-                    <p>Nosso método é baseado em princípios validados pela neurociência e psicologia comportamental:</p>
-                    <ul class="mentor-highlights">
-                        <li>Neuroplasticidade para reprogramação cerebral</li>
-                        <li>Psicologia positiva para desenvolvimento de mindset</li>
-                        <li>Técnicas de PNL (Programação Neurolinguística)</li>
-                        <li>Estudos de Harvard sobre desempenho de alto nível</li>
-                        <li>Metodologias validadas em ambientes corporativos</li>
-                    </ul>
+            <h2 class="section-title">COMPROVADO CIENTIFICAMENTE</h2>
+            <div class="proof-cards">
+                <div class="proof-card">
+                    <div class="proof-number">97%</div>
+                    <p>das pessoas atingem seus objetivos de peso</p>
                 </div>
-                <div class="scientific-visual">
-                    <h3>Eficácia Comprovada</h3>
-                    <p>Resultados mensuráveis em mais de 3.000 casos</p>
-                    <div class="scientific-stats">
-                        <div class="scientific-stat">
-                            <span class="scientific-number">94%</span>
-                            <span>Relatam crescimento financeiro</span>
-                        </div>
-                        <div class="scientific-stat">
-                            <span class="scientific-number">89%</span>
-                            <span>Melhora significativa na qualidade de vida</span>
-                        </div>
-                    </div>
+                <div class="proof-card">
+                    <div class="proof-number">5.000+</div>
+                    <p>pessoas já transformaram seus corpos</p>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">100%</div>
+                    <p>método natural sem contra-indicações</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+            <div class="faq-item">
+                <div class="faq-question">O método funciona para qualquer pessoa?</div>
+                <p>Sim! O método foi desenvolvido para se adaptar a diferentes metabolismos e idades.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Preciso fazer exercícios pesados?</div>
+                <p>Não! O foco é na alimentação inteligente. Exercícios leves são recomendados, mas não obrigatórios.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quanto tempo até ver resultados?</div>
+                <p>Resultados visíveis aparecem já na primeira semana, com transformação completa em 4 semanas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">Escolha Seu Pacote de Transformação</h2>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <div class="pricing-name">Pacote Essencial</h3>
-                    <div class="price">
-                        <span class="price-currency">MZN</span> 7.499
-                    </div>
-                    <p>Para quem quer iniciar a transformação</p>
-                    
-                    <ul class="features-list">
-                        <li>Acesso aos 4 dias de imersão</li>
-                        <li>Material de apoio básico</li>
-                        <li>Certificado de participação</li>
-                        <li>Coffee break durante o evento</li>
-                    </ul>
-
-                    <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Pacote Essencial do Hermenegildo Coach" 
-                       class="whatsapp-button" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        SOLICITAR ESTE PACOTE
-                    </a>
+            <h2 class="section-title">INVISTA NO SEU CORPO DOS SONHOS</h2>
+            
+            <div class="pricing-card">
+                <div class="pricing-badge">OFERTA ESPECIAL</div>
+                <h3 class="pricing-name">MÉTODO PREMIUM COMPLETO</h3>
+                <div class="price-old">De MZN 3.999</div>
+                <div class="price">
+                    <span class="price-currency">MZN</span> 2.499
                 </div>
+                <p>Pagamento único • Acesso vitalício</p>
                 
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Mais Popular</div>
-                    <div class="pricing-name">Pacote Premium</h3>
-                    <div class="price">
-                        <span class="price-currency">MZN</span> 12.999
-                    </div>
-                    <p>Transformação completa e suporte</p>
-                    
-                    <ul class="features-list">
-                        <li>Tudo do Pacote Essencial</li>
-                        <li>3 sessões de mentoria individual</li>
-                        <li>Material exclusivo avançado</li>
-                        <li>Acesso ao grupo VIP de alumni</li>
-                        <li>Plantão de dúvidas por 30 dias</li>
-                    </ul>
+                <ul class="features-list">
+                    <li>Protocolo completo de emagrecimento</li>
+                    <li>Plano alimentar personalizado</li>
+                    <li>Guia de receitas saudáveis</li>
+                    <li>Acompanhamento com especialista</li>
+                    <li>Grupo exclusivo de suporte</li>
+                    <li>Actualizações gratuitas para sempre</li>
+                    <li>Bônus: Guia de manutenção do peso</li>
+                </ul>
 
-                    <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Pacote Premium do Hermenegildo Coach" 
-                       class="whatsapp-button" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        SOLICITAR ESTE PACOTE
-                    </a>
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <strong>Garantia de 7 Dias</strong> - Devolução total se não ficar satisfeito
                 </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-name">Pacote VIP</h3>
-                    <div class="price">
-                        <span class="price-currency">MZN</span> 19.999
-                    </div>
-                    <p>Para resultados extraordinários</p>
-                    
-                    <ul class="features-list">
-                        <li>Tudo do Pacote Premium</li>
-                        <li>Mentoria individual ilimitada por 3 meses</li>
-                        <li>Acompanhamento personalizado</li>
-                        <li>Acesso a eventos exclusivos</li>
-                        <li>Consultoria para seu negócio</li>
-                    </ul>
 
-                    <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Pacote VIP do Hermenegildo Coach" 
-                       class="whatsapp-button" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        SOLICITAR ESTE PACOTE
-                    </a>
-                </div>
-            </div>
-
-            <div class="guarantee">
-                <i class="fas fa-shield-alt"></i>
-                <strong>Garantia de 7 Dias</strong> - Devolução total se não ficar satisfeito
+                <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Método Premium e gostaria de mais informações" 
+                   class="whatsapp-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    QUERO COMPRAR AGORA
+                </a>
             </div>
         </div>
     </section>
@@ -804,24 +999,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <div class="footer-logo">Hermenegildo<span>Coach</span></div>
-                    <p>Especialista em transformação pessoal e empresarial através de métodos comprovados cientificamente.</p>
+                    <div class="footer-logo">Método<span>Premium</span></div>
+                    <p>Transformando vidas através do emagrecimento saudável e definitivo.</p>
                 </div>
                 
                 <div class="footer-contact">
-                    <h3>Contacte-nos Agora</h3>
+                    <h3>Fale Conosco</h3>
                     <div class="contact-info">
                         <a href="https://wa.me/258851760874" class="whatsapp-button" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             +258 85 176 0874
                         </a>
-                        <p>Horário de atendimento: Segunda a Sábado, 8h às 20h</p>
+                        <p>Horário: Segunda a Sábado, 8h às 20h</p>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Hermenegildo Coach. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Método Premium. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -839,7 +1034,7 @@
 
         // Animação simples ao scroll
         window.addEventListener('scroll', function() {
-            const cards = document.querySelectorAll('.day-card, .testimonial-card, .pricing-card');
+            const cards = document.querySelectorAll('.benefit-card, .step, .result-card, .proof-card, .faq-item, .transformation-card');
             cards.forEach(card => {
                 const cardTop = card.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
@@ -852,7 +1047,7 @@
 
         // Inicializar animações
         document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.day-card, .testimonial-card, .pricing-card');
+            const cards = document.querySelectorAll('.benefit-card, .step, .result-card, .proof-card, .faq-item, .transformation-card');
             cards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
