@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Método Premium - Emagrecimento Definitivo em 4 Semanas</title>
+    <title>Método 0.6Em4 - Reduza 6cm da Barriga em 4 Semanas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -271,6 +271,103 @@
             background: var(--gold);
         }
 
+        /* About Creator */
+        .about-creator {
+            background: white;
+            text-align: center;
+        }
+
+        .creator-card {
+            background: var(--light);
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .creator-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 5px solid var(--gold);
+        }
+
+        .creator-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .creator-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            gap: 10px;
+        }
+
+        .creator-stat {
+            text-align: center;
+        }
+
+        .creator-stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            display: block;
+        }
+
+        .creator-stat-text {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* Progress Section */
+        .progress {
+            background: var(--gradient-purple);
+            color: white;
+        }
+
+        .week-card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .week-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .week-features {
+            list-style: none;
+        }
+
+        .week-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            padding-left: 35px;
+            font-weight: 600;
+        }
+
+        .week-features li:before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.3rem;
+        }
+
         /* Transformation Section - SLIDER HORIZONTAL */
         .transformation {
             background: var(--light);
@@ -429,6 +526,7 @@
             border-radius: 20px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 25px;
         }
 
         .ebook-image {
@@ -448,7 +546,7 @@
 
         /* Bônus Garantia Section */
         .bonus-garantia {
-            background: var(--gradient-purple);
+            background: var(--gradient);
             color: white;
             text-align: center;
         }
@@ -717,7 +815,7 @@
 </head>
 <body>
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Método Premium e gostaria de mais informações" 
+    <a href="https://wa.me/258851760874?text=Olá! Tenho interesse no Método 0.6Em4 e gostaria de mais informações" 
        class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -726,8 +824,8 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">Método<span>Premium</span></div>
-                <div class="header-badge">EMAGRECIMENTO</div>
+                <div class="logo">Método<span>0.6Em4</span></div>
+                <div class="header-badge">QUEIMA 6CM</div>
             </div>
         </div>
     </header>
@@ -736,26 +834,116 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">MÉTODO 100% NATURAL</div>
-                <h1>EMAGREÇA 8KG EM 4 SEMANAS COM NOSSO MÉTODO EXCLUSIVO</h1>
-                <p>Transforme seu corpo com treino personalizado, cardápio inteligente e acompanhamento especializado</p>
+                <div class="hero-badge">MÉTODO COMPROVADO</div>
+                <h1>REDUZA 6CM DA BARRIGA EM APENAS 4 SEMANAS</h1>
+                <p>Esta é a sua chance de REDUZIR o Volume da sua Barriga e SAIR da depressão, baixa autoestima, pondo roupas que não gosta, devido ao excesso da gordura na barriga.</p>
                 
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">8KG</span>
-                        <span class="stat-text">Menos Peso</span>
+                        <span class="stat-number">6CM</span>
+                        <span class="stat-text">Menos Barriga</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">4</span>
                         <span class="stat-text">Semanas</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-text">Resultado</span>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">Anos Exp</span>
                     </div>
                 </div>
                 
-                <a href="#pricing" class="cta-button" id="quero-emagrecer-btn">QUERO EMAGRECER AGORA</a>
+                <a href="#pricing" class="cta-button" id="quero-emagrecer-btn">COMEÇAR A QUEIMAR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Creator -->
+    <section class="about-creator">
+        <div class="container">
+            <h2 class="section-title">CRIADOR DO MÉTODO</h2>
+            
+            <div class="creator-card">
+                <div class="creator-image">
+                    <img src="https://i.postimg.cc/3NLFG7Cv/IMG-20251009-WA0104.jpg" alt="Hermenegildo Mucanze">
+                </div>
+                
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Hermenegildo Mucanze</h3>
+                <p style="color: #666; margin-bottom: 20px; font-weight: 600;">
+                    Licenciado em Educação Física e Desportos | Especialista em Emagrecimento
+                </p>
+                
+                <div class="creator-stats">
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">17+</span>
+                        <span class="creator-stat-text">Anos Experiência</span>
+                    </div>
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">700+</span>
+                        <span class="creator-stat-text">Mulheres Atendidas</span>
+                    </div>
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">100%</span>
+                        <span class="creator-stat-text">Foco em Resultados</span>
+                    </div>
+                </div>
+                
+                <p style="text-align: left; margin: 20px 0; font-size: 1rem;">
+                    "Trabalhando como Personal Trainer em Emagrecimento há mais de 17 anos, já ajudei mais de 700 mulheres a conquistar e viver com corpo e barriga saudável."
+                </p>
+                
+                <div style="background: var(--gold); color: var(--primary); padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-weight: 800; margin-bottom: 10px;">AUTOR DE:</p>
+                    <p style="font-weight: 600;">📚 "Cozinha Queima Gordura 24 Sobre 24 horas"</p>
+                    <p style="font-weight: 600;">📖 E-book "Guia de Queima Acelerada de Gordura"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="progress">
+        <div class="container">
+            <h2 class="section-title light">SUA EVOLUÇÃO SEMANA A SEMANA</h2>
+            
+            <div class="week-card">
+                <h3 class="week-title">SEMANA #1</h3>
+                <ul class="week-features">
+                    <li>Sua respiração começa a melhorar</li>
+                    <li>Seus músculos, articulações ficam mais fortes</li>
+                    <li>Seu metabolismo começa a acelerar</li>
+                    <li>Seu corpo começa a desinchar na cara, barriga, mãos...</li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3 class="week-title">SEMANA #2</h3>
+                <ul class="week-features">
+                    <li>Sua Barriga está encolher para lá em cima</li>
+                    <li>Seu metabolismo está a queimar gordura 24/24h</li>
+                    <li>Seu bumbum e pernas começam a ficarem mais durinhas e lisas</li>
+                    <li>Você já anda boas distâncias sem se cansar no peito</li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3 class="week-title">SEMANA #3</h3>
+                <ul class="week-features">
+                    <li>Sua Barriga não está mais descaída</li>
+                    <li>Os pneuzinhos da barriga e das axilas estão a desaparecer</li>
+                    <li>Suas calças, saias, blusas e vestidos estão ficando largas</li>
+                    <li>Seus novos hábitos de vida saudável estão instaladas</li>
+                </ul>
+            </div>
+
+            <div class="week-card">
+                <h3 class="week-title">SEMANA #4</h3>
+                <ul class="week-features">
+                    <li>Você começa a precisar de nova roupa mais fina</li>
+                    <li>Já recebe elogios do parceiro, das amigas, pela nova aparência abdominal</li>
+                    <li>As linhas laterais da barriga começam a parecer</li>
+                    <li>Você está leve e flexível até na HORA DA CAMA</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -763,7 +951,7 @@
     <!-- Transformation Section -->
     <section class="transformation">
         <div class="container">
-            <h2 class="section-title">RESULTADOS REAIS DOS NOSSOS ALUNOS</h2>
+            <h2 class="section-title">RESULTADOS REAIS DAS NOSSAS ALUNAS</h2>
             
             <div class="slider-container">
                 <button class="slider-arrow prev" onclick="changeSlide(-1)">
@@ -773,79 +961,35 @@
                 <div class="slider-track" id="sliderTrack">
                     <!-- Resultado 1 -->
                     <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">ANTES E DEPOIS - 8KG EM 4 SEMANAS</h3>
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO COMPLETA</h3>
                         <div class="transformation-images">
                             <div class="transformation-image">
                                 <img src="https://i.postimg.cc/nVj17L10/IMG-20251010-WA0014.jpg" alt="Antes e Depois 1">
                             </div>
                         </div>
-                        <p><strong>Maria, 34 anos:</strong> "Perdi 8kg em apenas 4 semanas! O método é incrível!"</p>
+                        <p><strong>Mércia, 34 anos:</strong> "Conquistei a barriga dos sonhos com o método 0.6Em4!"</p>
                     </div>
                     
                     <!-- Resultado 2 -->
                     <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO COMPLETA - 10KG</h3>
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">MUDANÇA RADICAL</h3>
                         <div class="transformation-images">
                             <div class="transformation-image">
                                 <img src="https://i.postimg.cc/CLCkHnnC/IMG-20251010-WA0010.jpg" alt="Antes e Depois 2">
                             </div>
                         </div>
-                        <p><strong>Ana, 28 anos:</strong> "10kg a menos e muita autoestima recuperada!"</p>
+                        <p><strong>Ana, 28 anos:</strong> "6cm a menos na barriga e muita autoestima recuperada!"</p>
                     </div>
 
                     <!-- Resultado 3 -->
                     <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">RESULTADO ESPETACULAR - 9KG</h3>
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">RESULTADO ESPETACULAR</h3>
                         <div class="transformation-images">
                             <div class="transformation-image">
                                 <img src="https://i.postimg.cc/SKPMNW3d/IMG-20251010-WA0013.jpg" alt="Antes e Depois 3">
                             </div>
                         </div>
-                        <p><strong>Carla, 31 anos:</strong> "9kg eliminados em 5 semanas. Método revolucionário!"</p>
-                    </div>
-
-                    <!-- Resultado 4 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO INCRÍVEL - 7KG</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/x8DNL90x/IMG-20251010-WA0007.jpg" alt="Antes e Depois 4">
-                            </div>
-                        </div>
-                        <p><strong>Sofia, 29 anos:</strong> "7kg em 4 semanas! Nunca me senti tão bem com meu corpo!"</p>
-                    </div>
-
-                    <!-- Resultado 5 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">MUDANÇA RADICAL - 9KG</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/nhRs04FZ/IMG-20251010-WA0003.jpg" alt="Antes e Depois 5">
-                            </div>
-                        </div>
-                        <p><strong>Paula, 32 anos:</strong> "9kg eliminados e minha autoestima renovada completamente!"</p>
-                    </div>
-
-                    <!-- Resultado 6 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">SUCESSO ABSOLUTO - 11KG</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/MKwjTZPC/IMG-20251010-WA0006.jpg" alt="Antes e Depois 6">
-                            </div>
-                        </div>
-                        <p><strong>Inês, 35 anos:</strong> "11kg a menos em 6 semanas! Resultado além do esperado!"</p>
-                    </div>
-
-                    <!-- Resultado 7 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">CONQUISTA DEFINITIVA - 8KG</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/Ghq7xmf5/IMG-20251010-WA0009.jpg" alt="Antes e Depois 7">
-                            </div>
-                        </div>
-                        <p><strong>Laura, 30 anos:</strong> "8kg eliminados e minha vida transformada completamente!"</p>
+                        <p><strong>Carla, 31 anos:</strong> "Método revolucionário! Barriga lisa em 4 semanas!"</p>
                     </div>
                 </div>
 
@@ -858,10 +1002,6 @@
                 <div class="slider-dot active" onclick="currentSlide(0)"></div>
                 <div class="slider-dot" onclick="currentSlide(1)"></div>
                 <div class="slider-dot" onclick="currentSlide(2)"></div>
-                <div class="slider-dot" onclick="currentSlide(3)"></div>
-                <div class="slider-dot" onclick="currentSlide(4)"></div>
-                <div class="slider-dot" onclick="currentSlide(5)"></div>
-                <div class="slider-dot" onclick="currentSlide(6)"></div>
             </div>
         </div>
     </section>
@@ -871,97 +1011,75 @@
         <div class="container">
             <h2 class="section-title">DEPOIMENTOS EM VÍDEO</h2>
             <div class="video-grid">
-                <!-- Vídeo 1 - YouTube -->
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/Ym3fOVybUto" 
-                            title="Depoimento Método Premium" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Transformação Completa</p>
-                <p style="color: #666; font-size: 0.9rem;">Assista ao depoimento emocionante</p>
-
-                <!-- Vídeo 2 - YouTube -->
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/vWq9Ea4yYCg" 
-                            title="Resultado Método Premium" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Resultado Impressionante em Poucas Semanas</p>
-                <p style="color: #666; font-size: 0.9rem;">Veja essa incrível transformação</p>
-
-                <!-- Vídeo 3 - GitHub -->
+                <!-- Vídeo 1 -->
                 <div class="video-container">
                     <video poster="https://i.postimg.cc/MHnqDFD6/20251010-085343.jpg" controls>
                         <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0017.mp4" type="video/mp4">
                         Seu navegador não suporta o elemento de vídeo.
                     </video>
                 </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Transformação Impressionante - 9:1</p>
-                <p style="color: #666; font-size: 0.9rem;">Resultado real em poucas semanas</p>
+                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Aluna Mércia</p>
+                <p style="color: #666; font-size: 0.9rem;">Veja a transformação impressionante</p>
 
-                <!-- Vídeo 4 - GitHub -->
+                <!-- Vídeo 2 -->
                 <div class="video-container">
                     <video poster="https://i.postimg.cc/Ls7psTRS/20251010-085436.jpg" controls>
                         <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0016.mp4" type="video/mp4">
                         Seu navegador não suporta o elemento de vídeo.
                     </video>
                 </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Exclusivo - 9:1</p>
+                <p style="font-weight: 600; margin-bottom: 10px;">Testemunho Exclusivo</p>
                 <p style="color: #666; font-size: 0.9rem;">História inspiradora de transformação</p>
             </div>
         </div>
     </section>
 
-    <!-- Ebook Section -->
-    <section class="ebook">
-        <div class="container">
-            <h2 class="section-title light">NOSSO EBOOK EXCLUSIVO</h2>
-            <div class="ebook-card">
-                <div class="ebook-image">
-                    <img src="https://i.postimg.cc/x82qcgRK/IMG-20251010-WA0011.jpg" alt="Ebook Método Premium">
-                </div>
-                <h3 style="margin-bottom: 15px;">CÓDIGOS DE ALIMENTAÇÃO</h3>
-                <p style="margin-bottom: 20px;">Descubra os segredos da alimentação inteligente que aceleram o metabolismo e queimam gordura 24 horas por dia.</p>
-                <p style="font-weight: 700;">Só no Método Premium</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bônus Garantia Section -->
+    <!-- Bônus Section -->
     <section class="bonus-garantia">
         <div class="container">
-            <h2 class="section-title light">BÔNUS EXCLUSIVOS E GARANTIA</h2>
+            <h2 class="section-title light">BÔNUS EXCLUSIVOS INCLUÍDOS</h2>
             
             <div class="bonus-card">
                 <div class="bonus-icon">
                     <i class="fas fa-gift"></i>
                 </div>
-                <h3 style="margin-bottom: 15px;">BÔNUS ESPECIAIS INCLUÍDOS</h3>
-                <p style="margin-bottom: 20px;">Ao adquirir o Método Premium hoje, você recebe estes bônus exclusivos:</p>
                 
-                <ul class="bonus-list">
-                    <li>Guia de Receitas Queimadoras de Gordura</li>
-                    <li>Plano de Treino em Casa (sem equipamentos)</li>
-                    <li>Acesso ao Grupo VIP de Suporte</li>
-                    <li>Consultoria com Especialista por 30 dias</li>
-                    <li>Ebook "Mindset do Emagrecimento"</li>
-                </ul>
+                <h3 style="margin-bottom: 20px;">BÔNUS #1: GUIA 28 DIAS Q.6Em4</h3>
+                <p style="margin-bottom: 20px;">Passo a passo para alcançar o corpo saudável, sem passar fome e nem prejudicar seus resultados.</p>
+
+                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #2: SUPER DETOX Q.6Em4</h3>
+                <p style="margin-bottom: 20px;">DETOX FULL 2 DIAS - Você pode começar a consumir alimentos saudáveis. Mas se sua barriga e vias digestivas estiverem intoxicadas, não vai conseguir barriga bonita.</p>
+
+                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #3: CÓDIGOS DE ALIMENTAÇÃO</h3>
+                <p style="margin-bottom: 20px;">Sem esses CÓDIGOS, Você pode até Emagrecer, mas seu emagrecer não só vai PARAR, como também vai VOLTAR A ENGORDAR.</p>
+
+                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #4: TRUQUES PARA BARRIGA LISA</h3>
+                <p>Para não ter Banhas soltas e Barriga mole. Treinos específicos para barriga definida e tonificada.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Garantia Section -->
+    <section class="ebook">
+        <div class="container">
+            <h2 class="section-title light">GARANTIA DE 7 DIAS</h2>
             
-            <div class="bonus-card">
+            <div class="ebook-card">
                 <div class="bonus-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h3 style="margin-bottom: 15px;">GARANTIA INCONDICIONAL DE 7 DIAS</h3>
-                <p style="margin-bottom: 20px;">Oferecemos uma garantia de satisfação total. Se em 7 dias você não estiver completamente satisfeita com os resultados, devolvemos 100% do seu investimento.</p>
+                <h3 style="margin-bottom: 20px;">GARANTIA INCONDICIONAL</h3>
+                <p style="margin-bottom: 20px; font-size: 1.1rem;">
+                    <strong>Se você aplicar o Método e passados 7 dias não gostar dos resultados em sua Barriga, basta mandar uma mensagem. Eu devolvo seu dinheiro e ficamos amigos.</strong>
+                </p>
                 
-                <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; margin-top: 20px;">
-                    <p style="font-weight: 700; font-size: 1.1rem;">⚠️ OFERTA POR TEMPO LIMITADO</p>
-                    <p style="margin-top: 10px;">Estes bônus são válidos apenas para compras realizadas hoje!</p>
+                <p style="font-style: italic; margin-top: 20px;">
+                    "Eu faço isso para você ter ideia sobre o quão levo a sério a saúde física e emocional dos meus alunos."
+                </p>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <p style="font-weight: 700; font-size: 1.1rem;">⚡ OFERTA POR TEMPO LIMITADO</p>
+                    <p style="margin-top: 10px;">Todos os 4 bônus são válidos apenas para compras realizadas hoje!</p>
                 </div>
             </div>
         </div>
@@ -970,28 +1088,28 @@
     <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">INVISTA NO SEU CORPO DOS SONHOS</h2>
+            <h2 class="section-title">INVISTA NA SUA AUTOESTIMA</h2>
             
             <div class="pricing-card">
                 <div class="pricing-badge">OFERTA ESPECIAL</div>
-                <h3 class="pricing-name">MÉTODO PREMIUM COMPLETO</h3>
-                <div class="price-old">De MZN 3.999</div>
+                <h3 class="pricing-name">MÉTODO 0.6Em4 COMPLETO</h3>
+                <div class="price-old">De MZN 3.800</div>
                 <div class="price">
-                    <span class="price-currency">MZN</span> 2.499
+                    <span class="price-currency">MZN</span> 2.750
                 </div>
-                <p style="font-weight: 700; color: var(--success);">PAGAMENTO ÚNICO | ACESSO VITALÍCIO</p>
+                <p style="font-weight: 700; color: var(--success);">PAGAMENTO ÚNICO | ACESSO IMEDIATO</p>
                 
                 <ul class="features-list">
                     <li>Protocolo completo de 4 semanas</li>
-                    <li>Plano de treino personalizado</li>
-                    <li>Cardápio inteligente semanal</li>
-                    <li>Ebook "Códigos de Alimentação"</li>
-                    <li>Acompanhamento com especialista</li>
-                    <li>Grupo VIP de suporte</li>
-                    <li>Acesso a todos os depoimentos</li>
-                    <li>Actualizações gratuitas para sempre</li>
+                    <li>Treinos para barriga lisa e definida</li>
+                    <li>Códigos de Alimentação exclusivos</li>
+                    <li>Guia 28 dias passo a passo</li>
+                    <li>Super Detox de 2 dias</li>
+                    <li>Truques para barriga sem flacidez</li>
+                    <li>Sem efeito sanfona - resultado duradouro</li>
+                    <li>Metabolismo acelerado 24/24h</li>
                     <li>Garantia de 7 dias</li>
-                    <li>Todos os bônus inclusos</li>
+                    <li>Suporte personalizado</li>
                 </ul>
 
                 <div style="background: var(--success); color: white; padding: 25px; text-align: center; margin: 25px 0; border-radius: 15px; font-size: 1.1rem; font-weight: 600;">
@@ -999,14 +1117,14 @@
                     <strong>GARANTIA DE 7 DIAS</strong> - Risco Zero para Você
                 </div>
 
-                <a href="https://wa.me/258851760874?text=Olá! Vi os resultados incríveis do Método Premium e quero garantir minha vaga AGORA! 🚀" 
+                <a href="https://wa.me/258851760874?text=Olá! Vi os resultados incríveis do Método 0.6Em4 e quero reduzir 6cm da minha barriga! 🚀" 
                    class="whatsapp-button" target="_blank">
                     <i class="fab fa-whatsapp"></i>
-                    QUERO GARANTIR MINHA VAGA
+                    QUERO MINHA BARRIGA LISA
                 </a>
                 
                 <p style="margin-top: 20px; font-weight: 600; color: #666; font-size: 0.9rem;">
-                    ⚠️ Vagas Limitadas | Oferta por tempo determinado
+                    ⚠️ Vagas Limitadas | Oferta válida por tempo determinado
                 </p>
             </div>
         </div>
@@ -1017,24 +1135,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <div class="footer-logo">Método<span>Premium</span></div>
-                    <p style="font-size: 1.1rem;">Transformando vidas através do emagrecimento saudável e definitivo.</p>
+                    <div class="footer-logo">Método<span>0.6Em4</span></div>
+                    <p style="font-size: 1.1rem;">Transformando a autoestima de mulheres através da redução de barriga saudável.</p>
                 </div>
                 
                 <div class="footer-contact">
-                    <h3 style="margin-bottom: 20px;">Fale Conosco</h3>
+                    <h3 style="margin-bottom: 20px;">Fale Com o Hermenegildo</h3>
                     <div class="contact-info">
                         <a href="https://wa.me/258851760874" class="whatsapp-button" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             +258 85 176 0874
                         </a>
-                        <p style="margin-top: 15px; font-weight: 600;">Horário: Segunda a Sábado, 8h às 20h</p>
+                        <p style="margin-top: 15px; font-weight: 600;">Especialista em Emagrecimento há 15+ anos</p>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2024 Método Premium. Todos os direitos reservados.</p>
+                <p>© 2024 Método 0.6Em4 por Hermenegildo Mucanze. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -1077,7 +1195,7 @@
             z-index: 999;
             box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
         `;
-        counterElement.innerHTML = '👀 <span id="counter">23</span> pessoas viram esta oferta hoje';
+        counterElement.innerHTML = '👀 <span id="counter">23</span> mulheres viram esta oferta hoje';
         document.body.appendChild(counterElement);
 
         setInterval(() => {
