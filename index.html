@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Método Premium - Emagrecimento Definitivo em 4 Semanas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,10 +15,10 @@
         }
 
         :root {
-            --primary: #2c3e50;
+            --primary: #1a1a1a;
             --secondary: #e74c3c;
             --accent: #3498db;
-            --light: #ecf0f1;
+            --light: #f8f9fa;
             --dark: #2c3e50;
             --success: #27ae60;
             --gold: #D4AF37;
@@ -49,7 +49,8 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            border-bottom: 3px solid var(--gold);
         }
 
         .header-content {
@@ -100,7 +101,7 @@
             background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
             background-size: cover;
             background-position: center;
-            opacity: 0.2;
+            opacity: 0.1;
         }
 
         .hero-content {
@@ -125,12 +126,14 @@
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             line-height: 1.3;
+            font-weight: 800;
         }
 
         .hero p {
             font-size: 1.1rem;
             margin-bottom: 30px;
             opacity: 0.9;
+            font-weight: 500;
         }
 
         .hero-stats {
@@ -157,6 +160,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-top: 5px;
+            font-weight: 600;
         }
 
         .cta-button {
@@ -174,6 +178,8 @@
             width: 90%;
             max-width: 300px;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
@@ -182,9 +188,239 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary);
+            font-weight: 800;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        /* Scientific Base */
+        .scientific {
+            background: white;
+            text-align: center;
+        }
+
+        .scientific-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .science-card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--accent);
+        }
+
+        .science-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        /* 4 Days Program */
+        .program {
+            background: var(--gradient);
+            color: white;
+        }
+
+        .days-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .day-card {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .day-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .day-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* Results Proof */
+        .results-proof {
+            background: white;
+        }
+
+        .proof-stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .proof-stat {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .proof-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--success);
+            display: block;
+        }
+
+        .proof-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Transformation Section */
+        .transformation {
+            background: var(--light);
+        }
+
+        .transformation-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .transformation-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .transformation-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .transformation-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+        }
+
+        .transformation-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .transformation-arrow {
+            font-size: 2rem;
+            color: var(--success);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: white;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--accent);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Pillars Section */
+        .pillars {
+            background: var(--gradient);
+            color: white;
+        }
+
+        .pillars-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pillar-card {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .pillar-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .pillar-multiplier {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gold);
+            margin: 10px 0;
+        }
+
         /* Mentor Section */
         .mentor {
-            padding: 60px 0;
             background: white;
             text-align: center;
         }
@@ -195,6 +431,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             margin-top: 30px;
+            border: 3px solid var(--gold);
         }
 
         .mentor-image {
@@ -204,7 +441,7 @@
             overflow: hidden;
             margin: 0 auto 20px;
             border: 5px solid var(--gold);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
         .mentor-image img {
@@ -215,9 +452,9 @@
 
         .mentor-name {
             font-size: 1.6rem;
-            color: var(--primary);
             margin-bottom: 10px;
-            font-weight: 700;
+            font-weight: 800;
+            color: var(--primary);
         }
 
         .mentor-title {
@@ -225,11 +462,6 @@
             color: var(--gold);
             margin-bottom: 15px;
             font-weight: 600;
-        }
-
-        .mentor-description {
-            margin-bottom: 20px;
-            text-align: center;
         }
 
         .mentor-stats {
@@ -254,241 +486,97 @@
             color: #666;
         }
 
-        /* Benefits Section */
-        .benefits {
-            padding: 60px 0;
+        /* Testimonials */
+        .testimonials {
             background: var(--light);
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: var(--primary);
-            font-weight: 700;
-        }
-
-        .benefits-grid {
+        .testimonials-grid {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
         }
 
-        .benefit-card {
+        .testimonial-card {
             background: white;
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            border-left: 5px solid var(--accent);
         }
 
-        .benefit-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .benefit-icon {
-            font-size: 2.5rem;
-            color: var(--accent);
+        .testimonial-text {
+            font-style: italic;
             margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
         }
 
-        .benefit-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-
-        /* Transformation Section */
-        .transformation {
-            padding: 60px 0;
-            background: white;
-        }
-
-        .transformation-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .transformation-card {
-            background: var(--light);
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .transformation-images {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-
-        .transformation-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid var(--gold);
-        }
-
-        .transformation-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .transformation-arrow {
-            display: flex;
-            align-items: center;
+        .testimonial-text::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
             font-size: 2rem;
-            color: var(--success);
+            color: var(--accent);
         }
 
-        /* How It Works */
-        .how-it-works {
-            padding: 60px 0;
-            background: var(--gradient);
-            color: white;
-        }
-
-        .steps {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .step {
+        .testimonial-author {
             display: flex;
             align-items: center;
-            gap: 20px;
-            background: rgba(255,255,255,0.15);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            gap: 15px;
         }
 
-        .step-number {
+        .author-image {
             width: 50px;
             height: 50px;
-            background: var(--gold);
-            color: var(--primary);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
+            overflow: hidden;
             flex-shrink: 0;
         }
 
-        .step-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-
-        /* Results Section */
-        .results {
-            padding: 60px 0;
-            background: white;
-        }
-
-        .results-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .result-card {
-            background: var(--light);
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .result-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 15px;
-            border: 3px solid var(--gold);
-        }
-
-        .result-image img {
+        .author-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .result-text {
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
-        .result-author {
+        .author-info h4 {
             font-weight: 700;
-            color: var(--primary);
+            margin-bottom: 5px;
         }
 
-        .result-stats {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
+        /* Steps Section */
+        .steps-section {
+            background: white;
         }
 
-        .result-stat {
-            text-align: center;
-        }
-
-        .result-stat-number {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--success);
-            display: block;
-        }
-
-        .result-stat-text {
-            font-size: 0.8rem;
-            color: #666;
-        }
-
-        /* Scientific Proof */
-        .scientific {
-            padding: 60px 0;
-            background: var(--light);
-        }
-
-        .proof-cards {
+        .steps-grid {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        .proof-card {
-            background: white;
+        .step-card {
+            background: var(--light);
             padding: 25px;
             border-radius: 15px;
-            text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .proof-number {
-            font-size: 2.5rem;
+        .step-number {
+            font-size: 2rem;
             font-weight: 800;
-            color: var(--success);
+            color: var(--accent);
             margin-bottom: 10px;
         }
 
         /* Pricing Section */
         .pricing {
-            padding: 60px 0;
-            background: white;
+            background: var(--light);
         }
 
         .pricing-card {
-            background: var(--light);
+            background: white;
             padding: 30px;
             border-radius: 20px;
             text-align: center;
@@ -515,6 +603,7 @@
             font-size: 1.4rem;
             margin-bottom: 10px;
             color: var(--primary);
+            font-weight: 800;
         }
 
         .price {
@@ -547,6 +636,7 @@
             border-bottom: 1px solid #eee;
             position: relative;
             padding-left: 30px;
+            font-weight: 500;
         }
 
         .features-list li:before {
@@ -567,6 +657,7 @@
             margin: 25px 0;
             border-radius: 15px;
             font-size: 1.1rem;
+            font-weight: 600;
         }
 
         /* WhatsApp Button */
@@ -592,26 +683,6 @@
         .whatsapp-button:hover {
             background: #128C7E;
             transform: scale(1.05);
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 60px 0;
-            background: var(--light);
-        }
-
-        .faq-item {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .faq-question {
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--primary);
         }
 
         /* Footer */
@@ -722,7 +793,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">MÉTODO COMPROVADO</div>
+                <div class="hero-badge">MÉTODO CIENTIFICAMENTE COMPROVADO</div>
                 <h1>EMAGREÇA ATÉ 8KG EM 4 SEMANAS</h1>
                 <p>Descubra o método exclusivo que já transformou mais de 5.000 vidas sem dietas malucas ou exercícios exaustivos</p>
                 
@@ -746,57 +817,87 @@
         </div>
     </section>
 
-    <!-- Mentor Section -->
-    <section class="mentor">
+    <!-- Scientific Base -->
+    <section class="scientific">
         <div class="container">
-            <h2 class="section-title">SEU ESPECIALISTA</h2>
-            <div class="mentor-card">
-                <div class="mentor-image">
-                    <img src="https://i.postimg.cc/zfzY4860/IMG-20251009-WA0104.jpg" alt="Hermenegildo Coach">
+            <h2 class="section-title">BASE CIENTÍFICA COMPROVADA</h2>
+            <div class="scientific-grid">
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurociência</h3>
+                    <p>Fundamentado em neurociência e programação neurolinguística</p>
                 </div>
-                <h3 class="mentor-name">HERMENEGILDO COACH</h3>
-                <p class="mentor-title">Especialista em Emagrecimento Saudável</p>
-                <p class="mentor-description">Com mais de 12 anos de experiência em transformação corporal, Hermenegildo desenvolveu um método único que combina nutrição inteligente e estratégias comportamentais para resultados duradouros.</p>
-                
-                <div class="mentor-stats">
-                    <div class="mentor-stat">
-                        <span class="mentor-stat-number">5.000+</span>
-                        <span class="mentor-stat-text">Pessoas Transformadas</span>
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <div class="mentor-stat">
-                        <span class="mentor-stat-number">12+</span>
-                        <span class="mentor-stat-text">Anos de Experiência</span>
+                    <h3>Psicologia Positiva</h3>
+                    <p>Baseado em princípios da psicologia positiva e antropologia</p>
+                </div>
+                <div class="science-card">
+                    <div class="science-icon">
+                        <i class="fas fa-atom"></i>
                     </div>
+                    <h3>Física Quântica</h3>
+                    <p>Metodologia que incorpora conceitos da física quântica</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
+    <!-- 4 Weeks Program -->
+    <section class="program">
         <div class="container">
-            <h2 class="section-title">BENEFÍCIOS EXCLUSIVOS</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-weight"></i>
-                    </div>
-                    <h3>Perda de Peso Acelerada</h3>
-                    <p>Até 8kg em 4 semanas com método 100% natural</p>
+            <h2 class="section-title">O QUE ACONTECERÁ NAS 4 SEMANAS</h2>
+            <div class="days-grid">
+                <div class="day-card">
+                    <div class="day-number">01</div>
+                    <h3 class="day-title">SEMANA 1 - GANHE CONSCIÊNCIA</h3>
+                    <p>"DESCUBRA O FATOR INTERNO QUE CONTROLA SUA VIDA" - Você vai descobrir o fator interno que influencia toda a sua vida e dita os seus resultados.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Saúde Renovada</h3>
-                    <p>Melhora completa da saúde e disposição física</p>
+                <div class="day-card">
+                    <div class="day-number">02</div>
+                    <h3 class="day-title">SEMANA 2 - REPROGRAMAÇÃO</h3>
+                    <p>Aprenda como criar novas crenças e substituir narrativas limitantes por narrativas de poder que transformam seu corpo.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Resultado Definitivo</h3>
-                    <p>Método que ensina a manter o peso ideal para sempre</p>
+                <div class="day-card">
+                    <div class="day-number">03</div>
+                    <h3 class="day-title">SEMANA 3 - ATIVE SUA IDENTIDADE</h3>
+                    <p>"CONSTRUA SUA NOVA E PODEROSA VERSÃO" - Comece a construir sua nova versão, livre das amarras que impedem seu emagrecimento.</p>
+                </div>
+                <div class="day-card">
+                    <div class="day-number">04</div>
+                    <h3 class="day-title">SEMANA 4 - POTENCIALIZE</h3>
+                    <p>Consolide todos os resultados e aprenda a manter seu novo corpo de forma definitiva e saudável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Proof -->
+    <section class="results-proof">
+        <div class="container">
+            <h2 class="section-title">VOCÊ NÃO SERÁ COBAIA!</h2>
+            <p style="text-align: center; margin-bottom: 30px; font-weight: 500;">Já são mais de 1,8 milhão de vidas transformadas através do Método Premium</p>
+            
+            <div class="proof-stats">
+                <div class="proof-stat">
+                    <span class="proof-number">1.8M+</span>
+                    <span class="proof-text">Vidas Transformadas</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="proof-number">83+</span>
+                    <span class="proof-text">Países</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="proof-number">240+</span>
+                    <span class="proof-text">Edições</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="proof-number">12M+</span>
+                    <span class="proof-text">Livros Vendidos</span>
                 </div>
             </div>
         </div>
@@ -805,19 +906,19 @@
     <!-- Transformation Section -->
     <section class="transformation">
         <div class="container">
-            <h2 class="section-title">TRANSFORMAÇÕES REAIS</h2>
+            <h2 class="section-title">ANTES E DEPOIS</h2>
             <div class="transformation-grid">
                 <div class="transformation-card">
                     <h3>ANTES E DEPOIS</h3>
                     <div class="transformation-images">
                         <div class="transformation-image">
-                            <img src="https://i.postimg.cc/qMGPyg1m/antes-e-depois-1.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Antes">
+                            <img src="https://i.postimg.cc/qMGPyg1m/antes-e-depois-1.jpg" alt="Antes">
                         </div>
                         <div class="transformation-arrow">
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                         <div class="transformation-image">
-                            <img src="https://i.postimg.cc/mk7G0wNk/antes-e-depois-2.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Depois">
+                            <img src="https://i.postimg.cc/mk7G0wNk/antes-e-depois-2.jpg" alt="Depois">
                         </div>
                     </div>
                     <p><strong>Maria:</strong> Perdeu 9kg em 5 semanas</p>
@@ -827,7 +928,7 @@
                     <h3>RESULTADO ESPETACULAR</h3>
                     <div class="transformation-images">
                         <div class="transformation-image">
-                            <img src="https://i.postimg.cc/nhDLn4Fq/depositphotos-18298939-stock-photo-fat-woman-trying-to-wear.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Antes">
+                            <img src="https://i.postimg.cc/nhDLn4Fq/depositphotos-18298939-stock-photo-fat-woman-trying-to-wear.jpg" alt="Antes">
                         </div>
                         <div class="transformation-arrow">
                             <i class="fas fa-long-arrow-alt-right"></i>
@@ -842,116 +943,122 @@
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works">
+    <!-- Pillars Section -->
+    <section class="pillars">
         <div class="container">
-            <h2 class="section-title">COMO FUNCIONA</h2>
-            <div class="steps">
-                <div class="step">
+            <h2 class="section-title">PILARES DA TRANSFORMAÇÃO</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>Pilar do Peso</h3>
+                    <p>Elimine crenças de escassez e programe uma mentalidade abundante para o emagrecimento</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pilar da Saúde</h3>
+                    <p>Tenha saúde renovada, disposição física e bem-estar completo</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Alta Performance</h3>
+                    <div class="pillar-multiplier">10x</div>
+                    <p>Resultados multiplicados de 2 a 10 vezes mais rápido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">COMO PARTICIPAR</h2>
+            <div class="steps-grid">
+                <div class="step-card">
                     <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Protocolo Personalizado</h3>
-                        <p>Plano adaptado ao seu metabolismo e objetivos</p>
-                    </div>
+                    <h3>COMPRE SEU ACESSO</h3>
+                    <p>Garanta sua vaga no método através deste site</p>
                 </div>
-                <div class="step">
+                <div class="step-card">
                     <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Acompanhamento Diário</h3>
-                        <p>Suporte constante para garantir seus resultados</p>
-                    </div>
+                    <h3>RECEBA OS MATERIAIS</h3>
+                    <p>Acesso imediato a todo conteúdo digital</p>
                 </div>
-                <div class="step">
+                <div class="step-card">
                     <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Resultados em 4 Semanas</h3>
-                        <p>Transformação visível já no primeiro mês</p>
+                    <h3>INICIE A TRANSFORMAÇÃO</h3>
+                    <p>Comece a aplicar o método desde o primeiro dia</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>VIVA A MUDANÇA</h3>
+                    <p>Saia sendo uma pessoa completamente diferente e extraordinária</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Section -->
+    <section class="mentor">
+        <div class="container">
+            <h2 class="section-title">SEU MENTOR</h2>
+            <div class="mentor-card">
+                <div class="mentor-image">
+                    <img src="https://i.postimg.cc/zfzY4860/IMG-20251009-WA0104.jpg" alt="Hermenegildo Coach">
+                </div>
+                <h3 class="mentor-name">HERMENEGILDO COACH</h3>
+                <p class="mentor-title">Especialista em Emagrecimento Saudável</p>
+                <p>Com mais de 12 anos de experiência em transformação corporal, Hermenegildo desenvolveu um método único que combina nutrição inteligente e estratégias comportamentais para resultados duradouros.</p>
+                
+                <div class="mentor-stats">
+                    <div class="mentor-stat">
+                        <span class="mentor-stat-number">5.000+</span>
+                        <span class="mentor-stat-text">Transformações</span>
+                    </div>
+                    <div class="mentor-stat">
+                        <span class="mentor-stat-number">12+</span>
+                        <span class="mentor-stat-text">Anos</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section class="results">
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">DEPOIMENTOS REAIS</h2>
-            <div class="results-grid">
-                <div class="result-card">
-                    <div class="result-image">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ana">
-                    </div>
-                    <p class="result-text">"Finalmente consegui perder os 7kg que me incomodavam há anos! O método é incrível!"</p>
-                    <p class="result-author">- Ana, 32 anos</p>
-                    <div class="result-stats">
-                        <div class="result-stat">
-                            <span class="result-stat-number">7KG</span>
-                            <span class="result-stat-text">Menos</span>
+            <h2 class="section-title">TRANSFORMAÇÕES REAIS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Finalmente consegui perder os 7kg que me incomodavam há anos! O método é incrível e mudou completamente minha relação com a comida.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ana">
                         </div>
-                        <div class="result-stat">
-                            <span class="result-stat-number">5</span>
-                            <span class="result-stat-text">Semanas</span>
+                        <div class="author-info">
+                            <h4>Ana, 32 anos</h4>
+                            <p>Perdeu 7kg em 5 semanas</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="result-card">
-                    <div class="result-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Carlos">
-                    </div>
-                    <p class="result-text">"Não acreditava que seria possível emagrecer sem passar fome. Método revolucionário!"</p>
-                    <p class="result-author">- Carlos, 45 anos</p>
-                    <div class="result-stats">
-                        <div class="result-stat">
-                            <span class="result-stat-number">10KG</span>
-                            <span class="result-stat-text">Menos</span>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Não acreditava que seria possível emagrecer sem passar fome. O método é revolucionário! Perdi 10kg e ganhei qualidade de vida.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Carlos">
                         </div>
-                        <div class="result-stat">
-                            <span class="result-stat-number">6</span>
-                            <span class="result-stat-text">Semanas</span>
+                        <div class="author-info">
+                            <h4>Carlos, 45 anos</h4>
+                            <p>Eliminou 10kg em 6 semanas</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scientific Proof -->
-    <section class="scientific">
-        <div class="container">
-            <h2 class="section-title">COMPROVADO CIENTIFICAMENTE</h2>
-            <div class="proof-cards">
-                <div class="proof-card">
-                    <div class="proof-number">97%</div>
-                    <p>das pessoas atingem seus objetivos de peso</p>
-                </div>
-                <div class="proof-card">
-                    <div class="proof-number">5.000+</div>
-                    <p>pessoas já transformaram seus corpos</p>
-                </div>
-                <div class="proof-card">
-                    <div class="proof-number">100%</div>
-                    <p>método natural sem contra-indicações</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
-            <div class="faq-item">
-                <div class="faq-question">O método funciona para qualquer pessoa?</div>
-                <p>Sim! O método foi desenvolvido para se adaptar a diferentes metabolismos e idades.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Preciso fazer exercícios pesados?</div>
-                <p>Não! O foco é na alimentação inteligente. Exercícios leves são recomendados, mas não obrigatórios.</p>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Quanto tempo até ver resultados?</div>
-                <p>Resultados visíveis aparecem já na primeira semana, com transformação completa em 4 semanas.</p>
             </div>
         </div>
     </section>
@@ -971,13 +1078,13 @@
                 <p>Pagamento único • Acesso vitalício</p>
                 
                 <ul class="features-list">
-                    <li>Protocolo completo de emagrecimento</li>
+                    <li>Protocolo completo de 4 semanas</li>
                     <li>Plano alimentar personalizado</li>
                     <li>Guia de receitas saudáveis</li>
                     <li>Acompanhamento com especialista</li>
                     <li>Grupo exclusivo de suporte</li>
                     <li>Actualizações gratuitas para sempre</li>
-                    <li>Bônus: Guia de manutenção do peso</li>
+                    <li>Bônus: Guia de manutenção</li>
                 </ul>
 
                 <div class="guarantee">
@@ -1034,7 +1141,7 @@
 
         // Animação simples ao scroll
         window.addEventListener('scroll', function() {
-            const cards = document.querySelectorAll('.benefit-card, .step, .result-card, .proof-card, .faq-item, .transformation-card');
+            const cards = document.querySelectorAll('.science-card, .day-card, .benefit-card, .testimonial-card, .pillar-card, .step-card');
             cards.forEach(card => {
                 const cardTop = card.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
@@ -1047,7 +1154,7 @@
 
         // Inicializar animações
         document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.benefit-card, .step, .result-card, .proof-card, .faq-item, .transformation-card');
+            const cards = document.querySelectorAll('.science-card, .day-card, .benefit-card, .testimonial-card, .pillar-card, .step-card');
             cards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
