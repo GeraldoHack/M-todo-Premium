@@ -513,40 +513,9 @@
             gap: 25px;
         }
 
-        /* Ebook Section */
-        .ebook {
+        /* Bônus Section */
+        .bonus {
             background: var(--gradient-teal);
-            color: white;
-            text-align: center;
-        }
-
-        .ebook-card {
-            background: rgba(255,255,255,0.15);
-            padding: 30px 25px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            margin-bottom: 25px;
-        }
-
-        .ebook-image {
-            width: 200px;
-            height: 250px;
-            margin: 0 auto 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-
-        .ebook-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Bônus Garantia Section */
-        .bonus-garantia {
-            background: var(--gradient);
             color: white;
             text-align: center;
         }
@@ -560,34 +529,50 @@
             margin-bottom: 25px;
         }
 
-        .bonus-icon {
+        .bonus-image {
+            width: 200px;
+            height: 250px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .bonus-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bonus-content {
+            text-align: center;
+        }
+
+        .bonus-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Garantia Section */
+        .garantia {
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .garantia-card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .garantia-icon {
             font-size: 3rem;
             margin-bottom: 20px;
             color: var(--gold);
-        }
-
-        .bonus-list {
-            list-style: none;
-            text-align: left;
-            margin: 25px 0;
-        }
-
-        .bonus-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            position: relative;
-            padding-left: 35px;
-            font-weight: 600;
-            font-size: 1.05rem;
-        }
-
-        .bonus-list li:before {
-            content: "✓";
-            color: var(--gold);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.3rem;
         }
 
         /* Pricing Section */
@@ -875,7 +860,7 @@
                 
                 <div class="creator-stats">
                     <div class="creator-stat">
-                        <span class="creator-stat-number">17+</span>
+                        <span class="creator-stat-number">15+</span>
                         <span class="creator-stat-text">Anos Experiência</span>
                     </div>
                     <div class="creator-stat">
@@ -889,7 +874,7 @@
                 </div>
                 
                 <p style="text-align: left; margin: 20px 0; font-size: 1rem;">
-                    "Trabalhando como Personal Trainer em Emagrecimento há mais de 17 anos, já ajudei mais de 700 mulheres a conquistar e viver com corpo e barriga saudável."
+                    "Trabalhando como Personal Trainer em Emagrecimento há mais de 15 anos, já ajudei mais de 700 mulheres a conquistar e viver com corpo e barriga saudável."
                 </p>
                 
                 <div style="background: var(--gold); color: var(--primary); padding: 15px; border-radius: 10px; margin-top: 20px;">
@@ -1035,37 +1020,62 @@
     </section>
 
     <!-- Bônus Section -->
-    <section class="bonus-garantia">
+    <section class="bonus">
         <div class="container">
             <h2 class="section-title light">BÔNUS EXCLUSIVOS INCLUÍDOS</h2>
             
-            <div class="bonus-card">
-                <div class="bonus-icon">
-                    <i class="fas fa-gift"></i>
+            <div class="bonus-grid">
+                <!-- Bônus 1 -->
+                <div class="bonus-card">
+                    <div class="bonus-image">
+                        <img src="https://i.postimg.cc/N0k3nJ6Q/IMG-20251010-WA0025.jpg" alt="Guia 28 Dias Queima Acelerada">
+                    </div>
+                    <div class="bonus-content">
+                        <h3 style="margin-bottom: 15px;">BÔNUS #1: GUIA 28 DIAS Q.6Em4</h3>
+                        <p>Passo a passo para alcançar o corpo saudável, sem passar fome e nem prejudicar seus resultados.</p>
+                    </div>
                 </div>
-                
-                <h3 style="margin-bottom: 20px;">BÔNUS #1: GUIA 28 DIAS Q.6Em4</h3>
-                <p style="margin-bottom: 20px;">Passo a passo para alcançar o corpo saudável, sem passar fome e nem prejudicar seus resultados.</p>
 
-                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #2: SUPER DETOX Q.6Em4</h3>
-                <p style="margin-bottom: 20px;">DETOX FULL 2 DIAS - Você pode começar a consumir alimentos saudáveis. Mas se sua barriga e vias digestivas estiverem intoxicadas, não vai conseguir barriga bonita.</p>
+                <!-- Bônus 2 -->
+                <div class="bonus-card">
+                    <div class="bonus-image">
+                        <img src="https://i.postimg.cc/j5VD8j4v/IMG-20251010-WA0024-removebg-preview.png" alt="Super Detox">
+                    </div>
+                    <div class="bonus-content">
+                        <h3 style="margin-bottom: 15px;">BÔNUS #2: SUPER DETOX Q.6Em4</h3>
+                        <p>DETOX FULL 2 DIAS - Você pode começar a consumir alimentos saudáveis. Mas se sua barriga e vias digestivas estiverem intoxicadas, não vai conseguir barriga bonita.</p>
+                    </div>
+                </div>
 
-                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #3: CÓDIGOS DE ALIMENTAÇÃO</h3>
-                <p style="margin-bottom: 20px;">Sem esses CÓDIGOS, Você pode até Emagrecer, mas seu emagrecer não só vai PARAR, como também vai VOLTAR A ENGORDAR.</p>
+                <!-- Bônus 3 -->
+                <div class="bonus-card">
+                    <div class="bonus-image">
+                        <img src="https://i.postimg.cc/tC79xjhD/IMG-20251010-WA0011.jpg" alt="Códigos de Alimentação">
+                    </div>
+                    <div class="bonus-content">
+                        <h3 style="margin-bottom: 15px;">BÔNUS #3: CÓDIGOS DE ALIMENTAÇÃO</h3>
+                        <p>Sem esses CÓDIGOS, Você pode até Emagrecer, mas seu emagrecer não só vai PARAR, como também vai VOLTAR A ENGORDAR.</p>
+                    </div>
+                </div>
 
-                <h3 style="margin-bottom: 20px; margin-top: 30px;">BÔNUS #4: TRUQUES PARA BARRIGA LISA</h3>
-                <p>Para não ter Banhas soltas e Barriga mole. Treinos específicos para barriga definida e tonificada.</p>
+                <!-- Bônus 4 -->
+                <div class="bonus-card">
+                    <div class="bonus-content">
+                        <h3 style="margin-bottom: 15px;">BÔNUS #4: TRUQUES PARA BARRIGA LISA</h3>
+                        <p>Para não ter Banhas soltas e Barriga mole. Treinos específicos para barriga definida e tonificada.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Garantia Section -->
-    <section class="ebook">
+    <section class="garantia">
         <div class="container">
             <h2 class="section-title light">GARANTIA DE 7 DIAS</h2>
             
-            <div class="ebook-card">
-                <div class="bonus-icon">
+            <div class="garantia-card">
+                <div class="garantia-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3 style="margin-bottom: 20px;">GARANTIA INCONDICIONAL</h3>
