@@ -16,18 +16,18 @@
 
         :root {
             --primary: #1a1a1a;
-            --secondary: #e74c3c;
+            --secondary: #2E86AB;
             --accent: #3498db;
             --light: #f8f9fa;
             --dark: #2c3e50;
             --success: #27ae60;
-            --gold: #D4AF37;
-            --purple: #8e44ad;
-            --teal: #1abc9c;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4A6 100%);
-            --gradient-teal: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
-            --gradient-purple: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+            --gold: #F9C74F;
+            --green: #2A9D8F;
+            --dark-blue: #1D3557;
+            --gradient: linear-gradient(135deg, #1D3557 0%, #2E86AB 100%);
+            --gradient-gold: linear-gradient(135deg, #F9C74F 0%, #F4E4A6 100%);
+            --gradient-green: linear-gradient(135deg, #2A9D8F 0%, #27ae60 100%);
+            --gradient-blue: linear-gradient(135deg, #2E86AB 0%, #3498db 100%);
         }
 
         body {
@@ -84,7 +84,7 @@
 
         /* Header Mobile */
         header {
-            background: rgba(26, 26, 26, 0.95);
+            background: rgba(29, 53, 87, 0.95);
             color: white;
             padding: 15px 0;
             position: fixed;
@@ -114,12 +114,12 @@
 
         .header-badge {
             background: var(--gradient-gold);
-            color: var(--primary);
+            color: var(--dark-blue);
             padding: 6px 12px;
             border-radius: 20px;
             font-weight: 700;
             font-size: 0.8rem;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 15px rgba(249, 199, 79, 0.3);
         }
 
         /* Hero Section Mobile */
@@ -156,14 +156,14 @@
 
         .hero-badge {
             background: var(--gradient-gold);
-            color: var(--primary);
+            color: var(--dark-blue);
             padding: 10px 25px;
             border-radius: 30px;
             font-weight: 800;
             font-size: 0.9rem;
             display: inline-block;
             margin-bottom: 25px;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 5px 20px rgba(249, 199, 79, 0.4);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -218,14 +218,14 @@
         .cta-button {
             display: block;
             background: var(--gradient-gold);
-            color: var(--primary);
+            color: var(--dark-blue);
             padding: 18px 30px;
             font-size: 1.1rem;
             font-weight: 800;
             text-decoration: none;
             border-radius: 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 8px 25px rgba(249, 199, 79, 0.4);
             margin: 25px auto;
             width: 90%;
             max-width: 320px;
@@ -236,7 +236,7 @@
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.6);
+            box-shadow: 0 12px 30px rgba(249, 199, 79, 0.6);
         }
 
         /* Sections */
@@ -248,7 +248,7 @@
             text-align: center;
             font-size: 1.8rem;
             margin-bottom: 40px;
-            color: var(--primary);
+            color: var(--dark-blue);
             font-weight: 800;
             position: relative;
         }
@@ -269,103 +269,6 @@
 
         .section-title.light::after {
             background: var(--gold);
-        }
-
-        /* About Creator */
-        .about-creator {
-            background: white;
-            text-align: center;
-        }
-
-        .creator-card {
-            background: var(--light);
-            padding: 30px 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .creator-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            overflow: hidden;
-            border: 5px solid var(--gold);
-        }
-
-        .creator-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .creator-stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 25px 0;
-            gap: 10px;
-        }
-
-        .creator-stat {
-            text-align: center;
-        }
-
-        .creator-stat-number {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--secondary);
-            display: block;
-        }
-
-        .creator-stat-text {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: var(--dark);
-        }
-
-        /* Progress Section */
-        .progress {
-            background: var(--gradient-purple);
-            color: white;
-        }
-
-        .week-card {
-            background: rgba(255,255,255,0.15);
-            padding: 30px 25px;
-            border-radius: 20px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .week-title {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: var(--gold);
-            font-weight: 800;
-            text-align: center;
-        }
-
-        .week-features {
-            list-style: none;
-        }
-
-        .week-features li {
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            position: relative;
-            padding-left: 35px;
-            font-weight: 600;
-        }
-
-        .week-features li:before {
-            content: "✓";
-            color: var(--gold);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.3rem;
         }
 
         /* Transformation Section - SLIDER HORIZONTAL */
@@ -442,7 +345,7 @@
         }
 
         .slider-dot.active {
-            background: var(--accent);
+            background: var(--secondary);
         }
 
         .slider-arrow {
@@ -459,7 +362,7 @@
             justify-content: center;
             cursor: pointer;
             font-size: 1.2rem;
-            color: var(--primary);
+            color: var(--dark-blue);
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             z-index: 10;
             transition: all 0.3s ease;
@@ -513,9 +416,53 @@
             gap: 25px;
         }
 
+        /* Progress Section */
+        .progress {
+            background: var(--gradient-blue);
+            color: white;
+        }
+
+        .week-card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .week-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .week-features {
+            list-style: none;
+        }
+
+        .week-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            padding-left: 35px;
+            font-weight: 600;
+        }
+
+        .week-features li:before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.3rem;
+        }
+
         /* Bônus Section */
         .bonus {
-            background: var(--gradient-teal);
+            background: var(--gradient-green);
             color: white;
             text-align: center;
         }
@@ -588,7 +535,7 @@
             box-shadow: 0 15px 40px rgba(0,0,0,0.1);
             position: relative;
             margin-bottom: 40px;
-            border: 4px solid var(--accent);
+            border: 4px solid var(--secondary);
             transition: transform 0.3s ease;
         }
 
@@ -602,12 +549,12 @@
             left: 50%;
             transform: translateX(-50%);
             background: var(--gradient-gold);
-            color: var(--primary);
+            color: var(--dark-blue);
             padding: 10px 25px;
             border-radius: 25px;
             font-weight: 800;
             font-size: 1rem;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 5px 20px rgba(249, 199, 79, 0.4);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -615,7 +562,7 @@
         .pricing-name {
             font-size: 1.6rem;
             margin-bottom: 15px;
-            color: var(--primary);
+            color: var(--dark-blue);
             font-weight: 800;
         }
 
@@ -691,9 +638,62 @@
             box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
         }
 
+        /* About Creator */
+        .about-creator {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .creator-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .creator-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 5px solid var(--gold);
+        }
+
+        .creator-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .creator-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            gap: 10px;
+        }
+
+        .creator-stat {
+            text-align: center;
+        }
+
+        .creator-stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            display: block;
+        }
+
+        .creator-stat-text {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
         /* Footer */
         footer {
-            background: var(--primary);
+            background: var(--dark-blue);
             color: white;
             padding: 50px 0 25px;
             text-align: center;
@@ -833,8 +833,8 @@
                         <span class="stat-text">Semanas</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-text">Anos Exp</span>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">Online</span>
                     </div>
                 </div>
                 
@@ -843,45 +843,99 @@
         </div>
     </section>
 
-    <!-- About Creator -->
-    <section class="about-creator">
+    <!-- Transformation Section -->
+    <section class="transformation">
         <div class="container">
-            <h2 class="section-title">CRIADOR DO MÉTODO</h2>
+            <h2 class="section-title">RESULTADOS REAIS DAS NOSSAS ALUNAS</h2>
             
-            <div class="creator-card">
-                <div class="creator-image">
-                    <img src="https://i.postimg.cc/3NLFG7Cv/IMG-20251009-WA0104.jpg" alt="Hermenegildo Mucanze">
-                </div>
+            <div class="slider-container">
+                <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 
-                <h3 style="color: var(--primary); margin-bottom: 15px;">Hermenegildo Mucanze</h3>
-                <p style="color: #666; margin-bottom: 20px; font-weight: 600;">
-                    Licenciado em Educação Física e Desportos | Especialista em Emagrecimento
-                </p>
-                
-                <div class="creator-stats">
-                    <div class="creator-stat">
-                        <span class="creator-stat-number">15+</span>
-                        <span class="creator-stat-text">Anos Experiência</span>
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Resultado 1 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--dark-blue);">TRANSFORMAÇÃO COMPLETA</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/nVj17L10/IMG-20251010-WA0014.jpg" alt="Antes e Depois 1">
+                            </div>
+                        </div>
+                        <p><strong>Mércia, 34 anos:</strong> "Conquistei a barriga dos sonhos com o método 0.6Em4!"</p>
                     </div>
-                    <div class="creator-stat">
-                        <span class="creator-stat-number">700+</span>
-                        <span class="creator-stat-text">Mulheres Atendidas</span>
+                    
+                    <!-- Resultado 2 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--dark-blue);">MUDANÇA RADICAL</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/CLCkHnnC/IMG-20251010-WA0010.jpg" alt="Antes e Depois 2">
+                            </div>
+                        </div>
+                        <p><strong>Ana, 28 anos:</strong> "6cm a menos na barriga e muita autoestima recuperada!"</p>
                     </div>
-                    <div class="creator-stat">
-                        <span class="creator-stat-number">100%</span>
-                        <span class="creator-stat-text">Foco em Resultados</span>
+
+                    <!-- Resultado 3 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--dark-blue);">RESULTADO ESPETACULAR</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/SKPMNW3d/IMG-20251010-WA0013.jpg" alt="Antes e Depois 3">
+                            </div>
+                        </div>
+                        <p><strong>Carla, 31 anos:</strong> "Método revolucionário! Barriga lisa em 4 semanas!"</p>
                     </div>
                 </div>
-                
-                <p style="text-align: left; margin: 20px 0; font-size: 1rem;">
-                    "Trabalhando como Personal Trainer em Emagrecimento há mais de 15 anos, já ajudei mais de 700 mulheres a conquistar e viver com corpo e barriga saudável."
-                </p>
-                
-                <div style="background: var(--gold); color: var(--primary); padding: 15px; border-radius: 10px; margin-top: 20px;">
-                    <p style="font-weight: 800; margin-bottom: 10px;">AUTOR DE:</p>
-                    <p style="font-weight: 600;">📚 "Cozinha Queima Gordura 24 Sobre 24 horas"</p>
-                    <p style="font-weight: 600;">📖 E-book "Guia de Queima Acelerada de Gordura"</p>
+
+                <button class="slider-arrow next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="slider-nav" id="sliderNav">
+                <div class="slider-dot active" onclick="currentSlide(0)"></div>
+                <div class="slider-dot" onclick="currentSlide(1)"></div>
+                <div class="slider-dot" onclick="currentSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="video-testimonials">
+        <div class="container">
+            <h2 class="section-title">DEPOIMENTOS EM VÍDEO</h2>
+            <div class="video-grid">
+                <!-- Vídeo 1 - YouTube -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/vWq9Ea4yYCg" 
+                            title="Depoimento Método 0.6Em4" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
                 </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Transformação Impressionante</p>
+                <p style="color: #666; font-size: 0.9rem;">Veja essa incrível transformação</p>
+
+                <!-- Vídeo 2 -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/rmr8K67L/IMG-20251010-WA0003.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0017.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Aluna Mércia</p>
+                <p style="color: #666; font-size: 0.9rem;">Veja a transformação impressionante</p>
+
+                <!-- Vídeo 3 -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/VNH6JW6j/IMG-20251010-WA0013.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0016.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Testemunho Exclusivo</p>
+                <p style="color: #666; font-size: 0.9rem;">História inspiradora de transformação</p>
             </div>
         </div>
     </section>
@@ -889,7 +943,7 @@
     <!-- Progress Section -->
     <section class="progress">
         <div class="container">
-            <h2 class="section-title light">SUA EVOLUÇÃO SEMANA A SEMANA</h2>
+            <h2 class="section-title light">O QUE VAI ACONTECER NAS PRÓXIMAS 4 SEMANAS</h2>
             
             <div class="week-card">
                 <h3 class="week-title">SEMANA #1</h3>
@@ -933,98 +987,22 @@
         </div>
     </section>
 
-    <!-- Transformation Section -->
-    <section class="transformation">
-        <div class="container">
-            <h2 class="section-title">RESULTADOS REAIS DAS NOSSAS ALUNAS</h2>
-            
-            <div class="slider-container">
-                <button class="slider-arrow prev" onclick="changeSlide(-1)">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
-                <div class="slider-track" id="sliderTrack">
-                    <!-- Resultado 1 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO COMPLETA</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/nVj17L10/IMG-20251010-WA0014.jpg" alt="Antes e Depois 1">
-                            </div>
-                        </div>
-                        <p><strong>Mércia, 34 anos:</strong> "Conquistei a barriga dos sonhos com o método 0.6Em4!"</p>
-                    </div>
-                    
-                    <!-- Resultado 2 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">MUDANÇA RADICAL</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/CLCkHnnC/IMG-20251010-WA0010.jpg" alt="Antes e Depois 2">
-                            </div>
-                        </div>
-                        <p><strong>Ana, 28 anos:</strong> "6cm a menos na barriga e muita autoestima recuperada!"</p>
-                    </div>
-
-                    <!-- Resultado 3 -->
-                    <div class="transformation-card">
-                        <h3 style="margin-bottom: 20px; color: var(--primary);">RESULTADO ESPETACULAR</h3>
-                        <div class="transformation-images">
-                            <div class="transformation-image">
-                                <img src="https://i.postimg.cc/SKPMNW3d/IMG-20251010-WA0013.jpg" alt="Antes e Depois 3">
-                            </div>
-                        </div>
-                        <p><strong>Carla, 31 anos:</strong> "Método revolucionário! Barriga lisa em 4 semanas!"</p>
-                    </div>
-                </div>
-
-                <button class="slider-arrow next" onclick="changeSlide(1)">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            
-            <div class="slider-nav" id="sliderNav">
-                <div class="slider-dot active" onclick="currentSlide(0)"></div>
-                <div class="slider-dot" onclick="currentSlide(1)"></div>
-                <div class="slider-dot" onclick="currentSlide(2)"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Testimonials -->
-    <section class="video-testimonials">
-        <div class="container">
-            <h2 class="section-title">DEPOIMENTOS EM VÍDEO</h2>
-            <div class="video-grid">
-                <!-- Vídeo 1 -->
-                <div class="video-container">
-                    <video poster="https://i.postimg.cc/MHnqDFD6/20251010-085343.jpg" controls>
-                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0017.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Aluna Mércia</p>
-                <p style="color: #666; font-size: 0.9rem;">Veja a transformação impressionante</p>
-
-                <!-- Vídeo 2 -->
-                <div class="video-container">
-                    <video poster="https://i.postimg.cc/Ls7psTRS/20251010-085436.jpg" controls>
-                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0016.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                </div>
-                <p style="font-weight: 600; margin-bottom: 10px;">Testemunho Exclusivo</p>
-                <p style="color: #666; font-size: 0.9rem;">História inspiradora de transformação</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Bônus Section -->
     <section class="bonus">
         <div class="container">
-            <h2 class="section-title light">BÔNUS EXCLUSIVOS INCLUÍDOS</h2>
+            <h2 class="section-title light">O QUE VOCÊ VAI RECEBER</h2>
             
             <div class="bonus-grid">
+                <!-- Produto Principal -->
+                <div class="bonus-card">
+                    <h3 style="margin-bottom: 20px; color: var(--gold);">🎯 PRODUTO PRINCIPAL</h3>
+                    <ul class="week-features" style="text-align: left;">
+                        <li><strong>Treino Completo:</strong> Protocolo de exercícios específicos para barriga</li>
+                        <li><strong>Acesso à Plataforma:</strong> Área de membros exclusiva com todos os treinos</li>
+                        <li><strong>Cardápio Inteligente:</strong> Plano alimentar personalizado</li>
+                    </ul>
+                </div>
+
                 <!-- Bônus 1 -->
                 <div class="bonus-card">
                     <div class="bonus-image">
@@ -1060,10 +1038,14 @@
 
                 <!-- Bônus 4 -->
                 <div class="bonus-card">
-                    <div class="bonus-content">
-                        <h3 style="margin-bottom: 15px;">BÔNUS #4: TRUQUES PARA BARRIGA LISA</h3>
-                        <p>Para não ter Banhas soltas e Barriga mole. Treinos específicos para barriga definida e tonificada.</p>
-                    </div>
+                    <h3 style="margin-bottom: 15px;">BÔNUS #4: ACOMPANHAMENTO PROFISSIONAL</h3>
+                    <p>Suporte direto com Hermenegildo Mucanze para tirar dúvidas e ajustar seu plano conforme seus resultados.</p>
+                </div>
+
+                <!-- Bônus 5 -->
+                <div class="bonus-card">
+                    <h3 style="margin-bottom: 15px;">BÔNUS #5: COISINHA QUEIMA GORDURA</h3>
+                    <p>Técnicas e estratégias extras para potencializar a queima de gordura 24 horas por dia.</p>
                 </div>
             </div>
         </div>
@@ -1089,7 +1071,7 @@
                 
                 <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; margin-top: 25px;">
                     <p style="font-weight: 700; font-size: 1.1rem;">⚡ OFERTA POR TEMPO LIMITADO</p>
-                    <p style="margin-top: 10px;">Todos os 4 bônus são válidos apenas para compras realizadas hoje!</p>
+                    <p style="margin-top: 10px;">Todos os bônus são válidos apenas para compras realizadas hoje!</p>
                 </div>
             </div>
         </div>
@@ -1110,16 +1092,16 @@
                 <p style="font-weight: 700; color: var(--success);">PAGAMENTO ÚNICO | ACESSO IMEDIATO</p>
                 
                 <ul class="features-list">
-                    <li>Protocolo completo de 4 semanas</li>
-                    <li>Treinos para barriga lisa e definida</li>
-                    <li>Códigos de Alimentação exclusivos</li>
-                    <li>Guia 28 dias passo a passo</li>
-                    <li>Super Detox de 2 dias</li>
-                    <li>Truques para barriga sem flacidez</li>
-                    <li>Sem efeito sanfona - resultado duradouro</li>
-                    <li>Metabolismo acelerado 24/24h</li>
-                    <li>Garantia de 7 dias</li>
-                    <li>Suporte personalizado</li>
+                    <li><strong>Treino Completo</strong> para redução de barriga</li>
+                    <li><strong>Acesso à Plataforma</strong> de treino online</li>
+                    <li><strong>Cardápio Inteligente</strong> personalizado</li>
+                    <li><strong>Acompanhamento Profissional</strong> com Hermenegildo</li>
+                    <li><strong>Super Detox</strong> de 2 dias</li>
+                    <li><strong>Guia 28 Dias</strong> passo a passo</li>
+                    <li><strong>Códigos de Alimentação</strong> exclusivos</li>
+                    <li><strong>Coisinha Queima Gordura</strong> extra</li>
+                    <li><strong>Garantia de 7 dias</strong></li>
+                    <li><strong>Suporte VIP</strong> no WhatsApp</li>
                 </ul>
 
                 <div style="background: var(--success); color: white; padding: 25px; text-align: center; margin: 25px 0; border-radius: 15px; font-size: 1.1rem; font-weight: 600;">
@@ -1136,6 +1118,49 @@
                 <p style="margin-top: 20px; font-weight: 600; color: #666; font-size: 0.9rem;">
                     ⚠️ Vagas Limitadas | Oferta válida por tempo determinado
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Creator -->
+    <section class="about-creator">
+        <div class="container">
+            <h2 class="section-title">SOBRE O CRIADOR DO MÉTODO</h2>
+            
+            <div class="creator-card">
+                <div class="creator-image">
+                    <img src="https://i.postimg.cc/3NLFG7Cv/IMG-20251009-WA0104.jpg" alt="Hermenegildo Mucanze">
+                </div>
+                
+                <h3 style="color: var(--dark-blue); margin-bottom: 15px;">Hermenegildo Mucanze</h3>
+                <p style="color: #666; margin-bottom: 20px; font-weight: 600;">
+                    Licenciado em Educação Física e Desportos | Especialista em Emagrecimento
+                </p>
+                
+                <div class="creator-stats">
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">15+</span>
+                        <span class="creator-stat-text">Anos Experiência</span>
+                    </div>
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">700+</span>
+                        <span class="creator-stat-text">Mulheres Atendidas</span>
+                    </div>
+                    <div class="creator-stat">
+                        <span class="creator-stat-number">100%</span>
+                        <span class="creator-stat-text">Foco em Resultados</span>
+                    </div>
+                </div>
+                
+                <p style="text-align: left; margin: 20px 0; font-size: 1rem;">
+                    "Trabalhando como Personal Trainer em Emagrecimento há mais de 15 anos, já ajudei mais de 700 mulheres a conquistar e viver com corpo e barriga saudável."
+                </p>
+                
+                <div style="background: var(--gold); color: var(--dark-blue); padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-weight: 800; margin-bottom: 10px;">AUTOR DE:</p>
+                    <p style="font-weight: 600;">📚 "Cozinha Queima Gordura 24 Sobre 24 horas"</p>
+                    <p style="font-weight: 600;">📖 E-book "Guia de Queima Acelerada de Gordura"</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1203,7 +1228,7 @@
             font-weight: 700;
             font-size: 0.9rem;
             z-index: 999;
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 5px 15px rgba(46, 134, 171, 0.4);
         `;
         counterElement.innerHTML = '👀 <span id="counter">23</span> mulheres viram esta oferta hoje';
         document.body.appendChild(counterElement);
