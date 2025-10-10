@@ -344,6 +344,12 @@
             border: none;
         }
 
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .video-grid {
             display: flex;
             flex-direction: column;
@@ -734,7 +740,7 @@
         <div class="container">
             <h2 class="section-title">DEPOIMENTOS EM VÍDEO</h2>
             <div class="video-grid">
-                <!-- Vídeo 1 -->
+                <!-- Vídeo 1 - YouTube -->
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/Ym3fOVybUto" 
                             title="Depoimento Método Premium" 
@@ -745,7 +751,7 @@
                 <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Transformação Completa</p>
                 <p style="color: #666; font-size: 0.9rem;">Assista ao depoimento emocionante</p>
 
-                <!-- Vídeo 2 -->
+                <!-- Vídeo 2 - YouTube -->
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/vWq9Ea4yYCg" 
                             title="Resultado Método Premium" 
@@ -755,6 +761,26 @@
                 </div>
                 <p style="font-weight: 600; margin-bottom: 10px;">Resultado Impressionante em Poucas Semanas</p>
                 <p style="color: #666; font-size: 0.9rem;">Veja essa incrível transformação</p>
+
+                <!-- Vídeo 3 - GitHub -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/MHnqDFD6/20251010-085343.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0017.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Transformação Impressionante - 9:1</p>
+                <p style="color: #666; font-size: 0.9rem;">Resultado real em poucas semanas</p>
+
+                <!-- Vídeo 4 - GitHub -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/Ls7psTRS/20251010-085436.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0016.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Exclusivo - 9:1</p>
+                <p style="color: #666; font-size: 0.9rem;">História inspiradora de transformação</p>
             </div>
         </div>
     </section>
