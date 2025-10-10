@@ -271,16 +271,25 @@
             background: var(--gold);
         }
 
-        /* Transformation Section */
+        /* Transformation Section - SLIDER HORIZONTAL */
         .transformation {
             background: var(--light);
             text-align: center;
+            position: relative;
         }
 
-        .transformation-grid {
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .slider-track {
             display: flex;
-            flex-direction: column;
-            gap: 30px;
+            transition: transform 0.5s ease-in-out;
+            gap: 20px;
+            padding: 10px 0;
         }
 
         .transformation-card {
@@ -289,6 +298,9 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            flex: 0 0 calc(100% - 40px);
+            min-width: calc(100% - 40px);
+            scroll-snap-align: start;
         }
 
         .transformation-card:hover {
@@ -311,14 +323,62 @@
 
         .transformation-image img {
             width: 100%;
-            height: auto;
+            height: 250px;
+            object-fit: cover;
             display: block;
         }
 
-        .transformation-arrow {
-            font-size: 2rem;
-            color: var(--success);
-            margin: 10px 0;
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background: var(--accent);
+        }
+
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--primary);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .slider-arrow:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-arrow.prev {
+            left: 10px;
+        }
+
+        .slider-arrow.next {
+            right: 10px;
         }
 
         /* Video Testimonials */
@@ -624,6 +684,12 @@
                 bottom: 20px;
                 right: 20px;
             }
+
+            .slider-arrow {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 360px) {
@@ -698,83 +764,104 @@
     <section class="transformation">
         <div class="container">
             <h2 class="section-title">RESULTADOS REAIS DOS NOSSOS ALUNOS</h2>
-            <div class="transformation-grid">
-                <!-- Resultado 1 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">ANTES E DEPOIS - 8KG EM 4 SEMANAS</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/nVj17L10/IMG-20251010-WA0014.jpg" alt="Antes e Depois 1">
-                        </div>
-                    </div>
-                    <p><strong>Maria, 34 anos:</strong> "Perdi 8kg em apenas 4 semanas! O método é incrível!"</p>
-                </div>
+            
+            <div class="slider-container">
+                <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 
-                <!-- Resultado 2 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO COMPLETA - 10KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/CLCkHnnC/IMG-20251010-WA0010.jpg" alt="Antes e Depois 2">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Resultado 1 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">ANTES E DEPOIS - 8KG EM 4 SEMANAS</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/nVj17L10/IMG-20251010-WA0014.jpg" alt="Antes e Depois 1">
+                            </div>
                         </div>
+                        <p><strong>Maria, 34 anos:</strong> "Perdi 8kg em apenas 4 semanas! O método é incrível!"</p>
                     </div>
-                    <p><strong>Ana, 28 anos:</strong> "10kg a menos e muita autoestima recuperada!"</p>
+                    
+                    <!-- Resultado 2 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO COMPLETA - 10KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/CLCkHnnC/IMG-20251010-WA0010.jpg" alt="Antes e Depois 2">
+                            </div>
+                        </div>
+                        <p><strong>Ana, 28 anos:</strong> "10kg a menos e muita autoestima recuperada!"</p>
+                    </div>
+
+                    <!-- Resultado 3 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">RESULTADO ESPETACULAR - 9KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/SKPMNW3d/IMG-20251010-WA0013.jpg" alt="Antes e Depois 3">
+                            </div>
+                        </div>
+                        <p><strong>Carla, 31 anos:</strong> "9kg eliminados em 5 semanas. Método revolucionário!"</p>
+                    </div>
+
+                    <!-- Resultado 4 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO INCRÍVEL - 7KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/x8DNL90x/IMG-20251010-WA0007.jpg" alt="Antes e Depois 4">
+                            </div>
+                        </div>
+                        <p><strong>Sofia, 29 anos:</strong> "7kg em 4 semanas! Nunca me senti tão bem com meu corpo!"</p>
+                    </div>
+
+                    <!-- Resultado 5 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">MUDANÇA RADICAL - 9KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/nhRs04FZ/IMG-20251010-WA0003.jpg" alt="Antes e Depois 5">
+                            </div>
+                        </div>
+                        <p><strong>Paula, 32 anos:</strong> "9kg eliminados e minha autoestima renovada completamente!"</p>
+                    </div>
+
+                    <!-- Resultado 6 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">SUCESSO ABSOLUTO - 11KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/MKwjTZPC/IMG-20251010-WA0006.jpg" alt="Antes e Depois 6">
+                            </div>
+                        </div>
+                        <p><strong>Inês, 35 anos:</strong> "11kg a menos em 6 semanas! Resultado além do esperado!"</p>
+                    </div>
+
+                    <!-- Resultado 7 -->
+                    <div class="transformation-card">
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">CONQUISTA DEFINITIVA - 8KG</h3>
+                        <div class="transformation-images">
+                            <div class="transformation-image">
+                                <img src="https://i.postimg.cc/Ghq7xmf5/IMG-20251010-WA0009.jpg" alt="Antes e Depois 7">
+                            </div>
+                        </div>
+                        <p><strong>Laura, 30 anos:</strong> "8kg eliminados e minha vida transformada completamente!"</p>
+                    </div>
                 </div>
 
-                <!-- Resultado 3 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">RESULTADO ESPETACULAR - 9KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/SKPMNW3d/IMG-20251010-WA0013.jpg" alt="Antes e Depois 3">
-                        </div>
-                    </div>
-                    <p><strong>Carla, 31 anos:</strong> "9kg eliminados em 5 semanas. Método revolucionário!"</p>
-                </div>
-
-                <!-- Resultado 4 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">TRANSFORMAÇÃO INCRÍVEL - 7KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/x8DNL90x/IMG-20251010-WA0007.jpg" alt="Antes e Depois 4">
-                        </div>
-                    </div>
-                    <p><strong>Sofia, 29 anos:</strong> "7kg em 4 semanas! Nunca me senti tão bem com meu corpo!"</p>
-                </div>
-
-                <!-- Resultado 5 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">MUDANÇA RADICAL - 9KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/nhRs04FZ/IMG-20251010-WA0003.jpg" alt="Antes e Depois 5">
-                        </div>
-                    </div>
-                    <p><strong>Paula, 32 anos:</strong> "9kg eliminados e minha autoestima renovada completamente!"</p>
-                </div>
-
-                <!-- Resultado 6 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">SUCESSO ABSOLUTO - 11KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/MKwjTZPC/IMG-20251010-WA0006.jpg" alt="Antes e Depois 6">
-                        </div>
-                    </div>
-                    <p><strong>Inês, 35 anos:</strong> "11kg a menos em 6 semanas! Resultado além do esperado!"</p>
-                </div>
-
-                <!-- Resultado 7 -->
-                <div class="transformation-card">
-                    <h3 style="margin-bottom: 20px; color: var(--primary);">CONQUISTA DEFINITIVA - 8KG</h3>
-                    <div class="transformation-images">
-                        <div class="transformation-image">
-                            <img src="https://i.postimg.cc/Ghq7xmf5/IMG-20251010-WA0009.jpg" alt="Antes e Depois 7">
-                        </div>
-                    </div>
-                    <p><strong>Laura, 30 anos:</strong> "8kg eliminados e minha vida transformada completamente!"</p>
-                </div>
+                <button class="slider-arrow next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="slider-nav" id="sliderNav">
+                <div class="slider-dot active" onclick="currentSlide(0)"></div>
+                <div class="slider-dot" onclick="currentSlide(1)"></div>
+                <div class="slider-dot" onclick="currentSlide(2)"></div>
+                <div class="slider-dot" onclick="currentSlide(3)"></div>
+                <div class="slider-dot" onclick="currentSlide(4)"></div>
+                <div class="slider-dot" onclick="currentSlide(5)"></div>
+                <div class="slider-dot" onclick="currentSlide(6)"></div>
             </div>
         </div>
     </section>
@@ -997,6 +1084,71 @@
             count++;
             document.getElementById('counter').textContent = 23 + count;
         }, 30000);
+
+        // Slider Horizontal para Transformações
+        let currentSlideIndex = 0;
+        const sliderTrack = document.getElementById('sliderTrack');
+        const slides = document.querySelectorAll('.transformation-card');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            const cardWidth = slides[0].offsetWidth + 20; // Largura do card + gap
+            sliderTrack.style.transform = `translateX(-${currentSlideIndex * cardWidth}px)`;
+            
+            // Atualizar dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlideIndex);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            
+            if (currentSlideIndex < 0) {
+                currentSlideIndex = totalSlides - 1;
+            } else if (currentSlideIndex >= totalSlides) {
+                currentSlideIndex = 0;
+            }
+            
+            updateSlider();
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index;
+            updateSlider();
+        }
+
+        // Auto slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Inicializar slider
+        updateSlider();
+
+        // Swipe para mobile
+        let startX = 0;
+        let currentX = 0;
+
+        sliderTrack.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        sliderTrack.addEventListener('touchmove', (e) => {
+            currentX = e.touches[0].clientX;
+        });
+
+        sliderTrack.addEventListener('touchend', () => {
+            const diff = startX - currentX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    changeSlide(1); // Swipe para esquerda
+                } else {
+                    changeSlide(-1); // Swipe para direita
+                }
+            }
+        });
     </script>
 </body>
 </html>
