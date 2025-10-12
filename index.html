@@ -142,7 +142,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background: url('https://i.postimg.cc/LXhysVF3/IMG-20251012-WA0069.jpg');
             background-size: cover;
             background-position: center;
             opacity: 0.1;
@@ -269,6 +269,49 @@
 
         .section-title.light::after {
             background: var(--gold);
+        }
+
+        /* Para Quem Serve Section */
+        .para-quem-serve {
+            background: white;
+            text-align: center;
+        }
+
+        .serve-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .serve-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--gold);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .serve-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .serve-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .serve-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Transformation Section - SLIDER HORIZONTAL */
@@ -843,6 +886,47 @@
         </div>
     </section>
 
+    <!-- Para Quem Serve Section -->
+    <section class="para-quem-serve">
+        <div class="container">
+            <h2 class="section-title">PARA QUEM SERVE O MÉTODO?</h2>
+            
+            <div class="serve-grid">
+                <div class="serve-card">
+                    <div class="serve-image">
+                        <img src="https://i.postimg.cc/GmMCHqs4/mulher-americana-africana-da-aptid-o-que-faz-os-polegares-acima-29247338.jpg" alt="Mulher com barriga bonita">
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--dark-blue);">Para quem deseja ter uma barriga bonita</h3>
+                    <p>Se você sonha com uma barriga lisa e definida, este método foi feito para você.</p>
+                </div>
+                
+                <div class="serve-card">
+                    <div class="serve-image">
+                        <img src="https://i.postimg.cc/MHcxSRGD/mae-passando-tempo-com-seu-filho-amado-23-2149505176.jpg" alt="Mãe com filho">
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--dark-blue);">Para quem deseja barriga elegante, mas não tem tempo de ir ao ginásio</h3>
+                    <p>Treinos curtos e eficientes que cabem na sua rotina, sem precisar sair de casa.</p>
+                </div>
+                
+                <div class="serve-card">
+                    <div class="serve-image">
+                        <img src="https://i.postimg.cc/x8jJy6tn/collage-woman-black-sportswear-fat-600nw-2472757439.jpg" alt="Mulher com barriga fina">
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--dark-blue);">Para quem deseja ter uma barriga que lhe permite por roupas que gosta</h3>
+                    <p>Volte a usar suas roupas favoritas com confiança e autoestima renovada.</p>
+                </div>
+                
+                <div class="serve-card">
+                    <div class="serve-image">
+                        <img src="https://i.postimg.cc/VN3WgPb2/shutterstock-670209337-320x240.jpg" alt="Mulher treinando em casa">
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--dark-blue);">Para quem deseja reduzir barriga treinando em sua casa</h3>
+                    <p>Resultados profissionais sem precisar sair do conforto do seu lar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Transformation Section -->
     <section class="transformation">
         <div class="container">
@@ -988,7 +1072,37 @@
                 <p style="font-weight: 600; margin-bottom: 10px;">Resultado Impressionante em Poucas Semanas</p>
                 <p style="color: #666; font-size: 0.9rem;">Veja essa incrível transformação</p>
 
-                <!-- Vídeo 3 -->
+                <!-- Vídeo 3 - Alunos praticando -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/q7zS5rZ0/Screenshot-20251012-173756.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251012-WA0071.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Alunas Praticando - Treino Demonstrativo</p>
+                <p style="color: #666; font-size: 0.9rem;">Veja as alunas em ação durante os treinos</p>
+
+                <!-- Vídeo 4 - Alunos praticando -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/JhVZ9cpy/Screenshot-20251012-173954.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251012-WA0072.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Exercícios Práticos - Alunas em Ação</p>
+                <p style="color: #666; font-size: 0.9rem;">Demonstração dos exercícios do método</p>
+
+                <!-- Vídeo 5 - Alunos praticando -->
+                <div class="video-container">
+                    <video poster="https://i.postimg.cc/kg4gNqcH/Screenshot-20251010-145142.jpg" controls>
+                        <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251012-WA0073.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Treino Completo - Alunas Praticando</p>
+                <p style="color: #666; font-size: 0.9rem;">Sequência completa de exercícios</p>
+
+                <!-- Vídeo 6 - Depoimento -->
                 <div class="video-container">
                     <video poster="https://i.postimg.cc/LhF6mSSH/Screenshot-20251010-145157.jpg" controls>
                         <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0017.mp4" type="video/mp4">
@@ -998,7 +1112,7 @@
                 <p style="font-weight: 600; margin-bottom: 10px;">Depoimento Real - Aluna Mércia</p>
                 <p style="color: #666; font-size: 0.9rem;">Veja a transformação impressionante</p>
 
-                <!-- Vídeo 4 -->
+                <!-- Vídeo 7 - Depoimento -->
                 <div class="video-container">
                     <video poster="https://i.postimg.cc/kg4gNqcH/Screenshot-20251010-145142.jpg" controls>
                         <source src="https://raw.githubusercontent.com/GeraldoHack/Video/main/VID-20251010-WA0016.mp4" type="video/mp4">
